@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.16)  18 JUN 2019 10:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.16)  18 JUN 2019 14:17
 entering extended mode
 **C:/Users/teivanova/Downloads/master/master-degree/NumericalMethods/Problems_S
 econd_Exam_NM.tex
@@ -1096,23 +1096,37 @@ Overfull \hbox (86.90782pt too wide) detected at line 233
 []
  []
 
-[5] [6]
-Overfull \hbox (23.03741pt too wide) detected at line 338
+[5]
+Overfull \hbox (37.89186pt too wide) detected at line 265
 []
  []
 
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 385--387
+[6]
+Overfull \vbox (26.61066pt too high) has occurred while \output is active []
 
+
+[7]
+Overfull \hbox (32.38693pt too wide) detected at line 280
+[]
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 389--393
+Overfull \hbox (23.03741pt too wide) detected at line 375
+[]
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 422--424
+
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 426--430
 
  []
 
 
-Overfull \hbox (1.97137pt too wide) detected at line 395
+Overfull \hbox (1.97137pt too wide) detected at line 432
 \OML/cmm/m/it/12 B\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]; [] ; x[]\OT1/cmr/m/n/1
 2 ; \OML/cmm/m/it/12 t\OT1/cmr/m/n/12 ) = (\OML/cmm/m/it/12 x \OMS/cmsy/m/n/12 
   \OML/cmm/m/it/12 t\OT1/cmr/m/n/12 )[][\OML/cmm/m/it/12 x[]; [] ; x[]\OT1/cmr/
@@ -1122,17 +1136,17 @@ cmr/m/n/12 = []
  []
 
 
-Overfull \hbox (19.69258pt too wide) detected at line 413
+Overfull \hbox (19.69258pt too wide) detected at line 450
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 413--418
+Underfull \hbox (badness 10000) in paragraph at lines 450--455
 
  []
 
-[9]
-Overfull \hbox (32.23148pt too wide) detected at line 427
+[11]
+Overfull \hbox (32.23148pt too wide) detected at line 464
 \OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr
 /m/n/12 ) \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 p\OT1/cmr/m/n/12 (\OML/cmm/m/it/1
 2 x\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 j \OT1/cmr/m/n/12 = [] \OMS/cmsy/m/n/12  
@@ -1141,29 +1155,29 @@ ML/cmm/m/it/12 x\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 j  []
  []
 
 
-LaTeX Warning: Command \cyrk invalid in math mode on input line 444.
+LaTeX Warning: Command \cyrk invalid in math mode on input line 481.
 
 Missing character: There is no ê in font cmr12!
 
-Overfull \hbox (91.58391pt too wide) detected at line 448
+Overfull \hbox (91.58391pt too wide) detected at line 485
 []
  []
 
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 465--468
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 502--505
 
  []
 
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 485--487
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 522--524
 
  []
 
-[12] (Problems_Second_Exam_NM.aux) ) 
+[14] (Problems_Second_Exam_NM.aux) ) 
 Here is how much of TeX's memory you used:
  27118 strings out of 492973
  686274 string characters out of 3124920
- 884818 words of memory out of 3000000
+ 895818 words of memory out of 3000000
  30515 multiletter control sequences out of 15000+200000
  15527 words of font info for 41 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1188,9 +1202,9 @@ va/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
 <C:/Users/teivanova/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
 ts/cm/cmsy6.pfb><C:/Users/teivanova/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Problems_Second_Exam_NM.pdf (13 pages, 200973 bytes).
+Output written on Problems_Second_Exam_NM.pdf (15 pages, 208867 bytes).
 PDF statistics:
- 256 PDF objects out of 1000 (max. 8388607)
+ 262 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
