@@ -8,6 +8,7 @@
 \usepackage{graphicx}
 \usepackage{tcolorbox}
 \usepackage{pgfplots}
+\usepackage[shortlabels]{enumitem}
 
 \pgfplotsset{width=7cm, compat=1.10}
 \usepgfplotslibrary{fillbetween}
@@ -42,483 +43,547 @@
 Теодора Иванова \hfill \today
 \end{titlepage}
 \begin{center}{\section*{Първи тип}}\end{center}
-\problem
-Като използвате интерполационна формула на Лагранж, намерете полинома $p\in\pi_2$, който удовлетворява условията: $p(-1) = 2, p(1)  = 2, p(2) = 5$. Представете $p(x)$ по степените на $x$.
-\solution
-Използваме формулата
-\begin{equation*}
-L_2(f;x) = \sum_{k=0}^{2}f(x_k)\prod_{i=0,i\neq k}^{2}\frac{x-x_i}{x_k-x_i}
-\end{equation*}
-за $x_0=-1, x_1 = 1, x_2 = 2$
-и получаваме
-\begin{align*}
-L_2(f;x) &= f(-1)\frac{(x-x_1)(x-x_2)}{(x_0-x_1)(x_0-x_2)}+f(1)\frac{(x-x_0)(x-x_2)}{(x_1-x_0)(x_1-x_2)}+f(2)\frac{(x-x_0)(x-x_1)}{(x_2-x_0)(x_2-x_1)}\\
-&=2\frac{(x-1)(x-2)}{(-1-1)(-1-2)}+2\frac{(x+1)(x-2)}{(1+1)(1-2)}+5\frac{(x+1)(x-1)}{(2+1)(2-1)}\\
-&=2\frac{x^2-3x+2}{6}+2\frac{x^2-x-2}{-2}+5\frac{x^2-1}{3}\\
-&=\frac{x^2-3x+2+5x^2-5}{3} - x^2+x+2 = \frac{6x^2-3x-3-3x^2+3x+6}{3}\\
-&=\frac{3x^2+3}{3} = \boxed{x^2+1}
-\end{align*}
-\problem
-Полиномът $L_2(f;x)$ интерполира $f(x)= e^x$ в $-1, 0, 1$. Като използвате формулата за оценка на грешката докажете, че:
-\begin{equation*}
-\underset{x\in[-1,1]}{max}|f(x)-L_2(f;x)|\leq \frac{1}{5}.
-\end{equation*}
-\solution
-Формулата за оценка на грешката има вида:
-\begin{equation*}
-f(x)-L_n(f;x) = \frac{f^{(n+1)}(\xi)}{(n+1)!}w(x), \xi\in[-1,1].
-\end{equation*}
-Замествайки за $x_0=-1, x_1 = 0, x_2 = 1$ получаваме:
-\begin{align*}
-f(x)-L_2(f;x) &= \frac{f^{3}(\xi)}{(3)!}(x-x_0)(x-x_1)(x-x_2) \\
-&=\frac{e^\xi}{6}(x+1)x(x-1) = \boxed{\frac{e^\xi}{6}(x^3-x).}
-\end{align*}
-Търсим максимума на получената функция
-\begin{equation*}
-(f(x)-L_2(f;x))'=\frac{e^\xi}{6}(3x^2-1)
-\end{equation*}
-Този полином се нулира в $x=\pm\frac{1}{\sqrt{3}}$
-% сложи картинка
+    \problem
+        Като използвате интерполационна формула на Лагранж, намерете полинома $p\in\pi_2$, който удовлетворява условията: $p(-1) = 2, p(1)  = 2, p(2) = 5$. Представете $p(x)$ по степените на $x$.
+    \solution
+        Използваме формулата
+        \begin{equation*}
+        L_2(f;x) = \sum_{k=0}^{2}f(x_k)\prod_{i=0,i\neq k}^{2}\frac{x-x_i}{x_k-x_i}
+        \end{equation*}
+        за $x_0=-1, x_1 = 1, x_2 = 2$
+        и получаваме
+        \begin{align*}
+        L_2(f;x) &= f(-1)\frac{(x-x_1)(x-x_2)}{(x_0-x_1)(x_0-x_2)}+f(1)\frac{(x-x_0)(x-x_2)}{(x_1-x_0)(x_1-x_2)}+f(2)\frac{(x-x_0)(x-x_1)}{(x_2-x_0)(x_2-x_1)}\\
+        &=2\frac{(x-1)(x-2)}{(-1-1)(-1-2)}+2\frac{(x+1)(x-2)}{(1+1)(1-2)}+5\frac{(x+1)(x-1)}{(2+1)(2-1)}\\
+        &=2\frac{x^2-3x+2}{6}+2\frac{x^2-x-2}{-2}+5\frac{x^2-1}{3}\\
+        &=\frac{x^2-3x+2+5x^2-5}{3} - x^2+x+2 = \frac{6x^2-3x-3-3x^2+3x+6}{3}\\
+        &=\frac{3x^2+3}{3} = \boxed{x^2+1}
+        \end{align*}
+    \problem
+        Полиномът $L_2(f;x)$ интерполира $f(x)= e^x$ в $-1, 0, 1$. Като използвате формулата за оценка на грешката докажете, че:
+        \begin{equation*}
+        \underset{x\in[-1,1]}{max}|f(x)-L_2(f;x)|\leq \frac{1}{5}.
+        \end{equation*}
+    \solution
+        Формулата за оценка на грешката има вида:
+        \begin{equation*}
+        f(x)-L_n(f;x) = \frac{f^{(n+1)}(\xi)}{(n+1)!}w(x), \xi\in[-1,1].
+        \end{equation*}
+        Замествайки за $x_0=-1, x_1 = 0, x_2 = 1$ получаваме:
+        \begin{align*}
+        f(x)-L_2(f;x) &= \frac{f^{3}(\xi)}{(3)!}(x-x_0)(x-x_1)(x-x_2) \\
+        &=\frac{e^\xi}{6}(x+1)x(x-1) = \boxed{\frac{e^\xi}{6}(x^3-x).}
+        \end{align*}
+        Търсим максимума на получената функция
+        \begin{equation*}
+        (f(x)-L_2(f;x))'=\frac{e^\xi}{6}(3x^2-1)
+        \end{equation*}
+        Този полином се нулира в $x=\pm\frac{1}{\sqrt{3}}$
+        % сложи картинка
 
-\begin{tikzpicture}
-  \begin{axis}[
-    axis y line = center,
-    axis x line = center,
-    xtick       = {-1,-0.5773502691896258,0,0.5773502691896258,1},
-    xticklabels = {$-1$,$\frac{-1}{\sqrt{3}}$,$0$,$\frac{1}{\sqrt{3}}$,$1$},
-    ytick       = {3},
-    yticklabels = {$f(x)$},
-    samples     = 160,
-    domain      = -1:1,
-    xmin = -1.5, xmax = 1.5,
-    ymin = -5, ymax = 5,
-  ]
-  \addplot[name path=poly, black, thick, mark=none, ] {poly};
-  % \addplot[name path=poly, black, thick, mark=none, ] {origpoly};
-\end{axis}
-\end{tikzpicture}
+        \begin{tikzpicture}
+          \begin{axis}[
+            axis y line = center,
+            axis x line = center,
+            xtick       = {-1,-0.5773502691896258,0,0.5773502691896258,1},
+            xticklabels = {$-1$,$\frac{-1}{\sqrt{3}}$,$0$,$\frac{1}{\sqrt{3}}$,$1$},
+            ytick       = {3},
+            yticklabels = {$f(x)$},
+            samples     = 160,
+            domain      = -1:1,
+            xmin = -1.5, xmax = 1.5,
+            ymin = -5, ymax = 5,
+          ]
+          \addplot[name path=poly, black, thick, mark=none, ] {poly};
+          % \addplot[name path=poly, black, thick, mark=none, ] {origpoly};
+        \end{axis}
+        \end{tikzpicture}
 
-Като максимума си достига при $x=\frac{-1}{\sqrt3}$.\\
-От $\xi\in[-1,1]$ следва, че $e^\xi$ достига максимума си при $x=1$.
-Тогава
-\begin{align*}
-\underset{x\in[-1,1]}{max}|f(x)-L_2(f;x)| \leq \frac{e}{6}\underset{x\in[-1,1]}{max}\left |\frac{-2}{3\sqrt3}\right|
-\end{align*}
-От $e < 3$ и $\sqrt3 < 2$
-\begin{equation*}
-\underset{x\in[-1,1]}{max}|f(x)-L_2(f;x)| \leq\frac{3}{6}\frac{2}{6}=\frac{1}{6} \leq \frac{1}{5} 
-\end{equation*}
-\problem
-Като използвате интерполационна формула на Нютон с разделени разлики, намерете полинома $p\in\pi_3$, който удовлетворява условията: $p(-2) = -8, p(0) = 2, p(1)=4, p(2) = 12$.Представете $p(x)$ по степените на $x$.
-\solution
-Използваме таблицата за пресмятане на разделените разлики спрямо рекурентната им дефиниция.\\
-\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black]
-    Нека $x_0, \dotso, x_n$ са дадени различни точки. Разделената разлика на функция $f$ в точките $x_0, \dotso, x_n$ се бележи с $f[x_0, \dotso, x_n]$ и се определя индуктивно със следната рекурентна връзка.
+        Като максимума си достига при $x=\frac{-1}{\sqrt3}$.\\
+        От $\xi\in[-1,1]$ следва, че $e^\xi$ достига максимума си при $x=1$.
+        Тогава
+        \begin{align*}
+        \underset{x\in[-1,1]}{max}|f(x)-L_2(f;x)| \leq \frac{e}{6}\underset{x\in[-1,1]}{max}\left |\frac{-2}{3\sqrt3}\right|
+        \end{align*}
+        От $e < 3$ и $\sqrt3 < 2$
+        \begin{equation*}
+        \underset{x\in[-1,1]}{max}|f(x)-L_2(f;x)| \leq\frac{3}{6}\frac{2}{6}=\frac{1}{6} \leq \frac{1}{5} 
+        \end{equation*}
+    \problem
+        Като използвате интерполационна формула на Нютон с разделени разлики, намерете полинома $p\in\pi_3$, който удовлетворява условията: $p(-2) = -8, p(0) = 2, p(1)=4, p(2) = 12$.Представете $p(x)$ по степените на $x$.
+    \solution
+        Използваме таблицата за пресмятане на разделените разлики спрямо рекурентната им дефиниция.\\
+        \begin{tcolorbox}[colback=red!5!white,colframe=red!75!black]
+            Нека $x_0, \dotso, x_n$ са дадени различни точки. Разделената разлика на функция $f$ в точките $x_0, \dotso, x_n$ се бележи с $f[x_0, \dotso, x_n]$ и се определя индуктивно със следната рекурентна връзка.
+            \begin{equation*}
+              f[x_0, \dotso, x_n] = \frac{f[x_1, \dotso, x_n] - f[x_0, \dotso, x_{n-1}]}{x_n - x_0},\hspace{12pt}n = 1, \dotso, \infty
+            \end{equation*}
+            , като приемаме, че $f[x_i] = f(x_i)$
+        \end{tcolorbox}
+        \begin{tabular}{|c c c c c|}
+        \hline
+        $x_i$&$f_i$&$f[.,.]$&$f[.,.,.]$&$f[.,.,.,.]$\\
+        \hline
+        $-2$ & $-8$ &     &      &\\
+             &      & $5$ &      &\\
+        $0$  & $2$  &     & $-1$ &\\
+             &      & $2$ &      &$1$\\
+        $1$  & $4$  &     & $3$  &\\
+             &      & $8$ &      &\\
+        $2$  & $12$ &     &      &\\
+        \hline
+        \end{tabular}\\
+        Използваме формулата на Нютон
+        \begin{equation*}
+        L_n(f;x) = \sum_{k=0}^nf[x_0,\dotso,x_k](x-x_0)\dotso(x-x_{k-1}),
+        \end{equation*}
+        като приемаме, че $(x-x_0)\dotso(x-x_{k-1}) = 1$ при $k=0$.
+        \begin{align*}
+        p(x)=L_3(f;x) &= \sum_{k=0}^3f[-2,\dotso,2](x+2)\dotso(x-x_{k-1})\\
+        &=f[-2]+f[-2,0](x+2)x+f[-2,0,1](x+2)x+f[-2,0,1,2](x+2)x(x-1)\\
+        &= -8 + 5x+10-x^2-2x+x^3+x^2-2x \\
+        &= \boxed{2+x+x^3}
+        \end{align*}
+    \problem
+        Нека $S_k=1^2+\ldots+k^2$ за $k\geq1, S_0=0$. Покажете, че съществува единствен $p\in\pi_3:p(k)=S_k, k=0,1,2,\ldots$. Намерете $S_k$ като използвате формулата на Нютон с крайни разлики за интерполация напред.\\
+    \solution
+        \begin{tcolorbox}[colback=red!5!white,colframe=red!75!black]
+        Крайна разлика от $k$-ти ред дефинираме индуктивно по следния начин:
+        \begin{align*}
+        \Delta^0f_i&=f_i\\
+        \Delta^kf_i&=\Delta^{k-1}f_{i+1}-\Delta^{k-1}f_i
+        \end{align*}
+        \end{tcolorbox}
+        Използвайки дефиницията за крайни разлики ще покажем, че всички крайни разлики от 4-ти ред са 0.\\
+        \begin{tabular}{|c c c c c c|}
+        \hline
+        $k$&$S_k$&$\Delta S_k$&$\Delta^2S_k$&$\Delta^3S_k$&$\Delta^4S_k$\\
+        \hline
+        $0$ & $0$  &      &      &     &     \\
+            &      & $1$  &      &     &     \\
+        $1$ & $1$  &      & $3$  &     &     \\
+            &      & $4$  &      & $2$ &     \\
+        $2$ & $5$  &      & $5$  &     & $0$ \\
+            &      & $9$  &      & $2$ &     \\
+        $3$ & $14$ &      & $7$  &     & $0$ \\
+            &      & $16$ &      & $2$ &     \\
+        $4$ & $30$ &      & $9$  &     & $0$ \\
+            &      & $25$ &      & $2$ &     \\
+        $5$ & $55$ &      & $11$ &     & $0$ \\
+            &      & $36$ &      & $2$ &     \\
+        $6$ & $71$ &      & $13$ &     &     \\
+        ....& .... &......&......&.....&.....\\
+        \hline
+        \end{tabular}\\
+        От това, че всички крайни разлики от 4-ти ред са 0, следва, че интерполационния полином на $S_k$ е от $\pi_3$.
+        За да намерим $p(x)\in\pi_3$ ще използваме формула на Нютон за интерполиране напред.
+        Провери формулите
+        \begin{tcolorbox}[colback=red!5!white,colframe=red!75!black]
+        Формула на Нютон за интерполиране напред в равноотдалечени възли
+        \begin{align*}
+        L_n(f;x_0+th)=\sum_{k=0}^{n}{t \choose k}\Delta^kf_0
+        \end{align*}
+        \end{tcolorbox}
+        \begin{tcolorbox}[colback=red!5!white,colframe=red!75!black]
+        КОМЕНТАР\\
+        Формула на Нютон за интерполиране назад в равноотдалечени възли
+        \begin{align*}
+        L_n(f;x_n+th)=\sum_{k=0}^{n}{t+k-1 \choose k}\Delta^kf_{n-k}
+        \end{align*}
+        \end{tcolorbox}
+        Тоест 
+        \begin{align*}
+        p(x)=L_n(S;x)&=\sum_{k=0}^{3}{x \choose k}\Delta^kS_0 =
+         {x \choose 0}\Delta^0S_0+{x \choose 1}\Delta S_0+{x \choose 2}\Delta^2S_0+{x \choose 3}\Delta^3S_0 \\
+        &=0+x.1+\frac{x(x-1)}{2!}.3+\frac{x(x-1)(x-2)}{3!}.2 \\
+        &= x+\frac{3x^2-3x}{2}+\frac{2x^3-6x^2+4x}{6}=\frac{6x+9x^2-9x+2x^3-6x^2+4x}{6}\\&=\frac{2x^3+3x^2+x}{6} =\boxed{\frac{x^3}{3}+\frac{x^2}{2} +\frac{x}{6}}
+        \end{align*}
+    \problem
+        Като използвате интерполационна формула на Нютон с разделени разлики с кратни възли, намерете интерполационния полином на Ермит, който усовлетворява условията: $p(0) = -1, p'(0) = 1, p''(0)=2, p(1) =0,p'(1)=-1$. Представете $p(x)$ по степените на $x$.\\
+    \solution
+        \begin{tcolorbox}[colback=red!5!white,colframe=red!75!black]
+        Теорема.Нека $x_0\leq x_1\leq\ldots\leq x_n$ е редица от реални числа и $f(x)$ е достатъчно гладка функция в интервал, който ги съдържа. Тогава
+        \begin{align*}
+        f[x_0,x_1,\ldots,x_n] = \begin{cases}
+                                    \frac{f[x_1,\ldots,x_n]-f[x_0,\ldots,x_{n-1}]}{x_n-x_0},x_0<x_1<\ldots<x_n\\
+                                    \frac{f^{(n)}(x_0)}{n!} , x_0=x_1=\ldots=x_n
+                                \end{cases}
+        \end{align*}
+        \end{tcolorbox}
+        Използвайки горната теорема ще пресметнем таблицата с разделените разлики:
+        \begin{tabular}{|c c c c c c|}
+        \hline
+        $x_i$&$f_i$&$f[.,.]$&$f[.,.,.]$&$f[.,.,.,.]$\\
+        \hline
+        $0$ & $-1$ &      &                  &      &\\
+            &      & $1$  &                  &      &\\
+        $0$ & $-1$ &      & $\frac{2}{2!}$=1 &      &\\
+            &      & $1$  &                  & $-1$ &\\
+        $0$ & $-1$ &      & $0$              &      & $-1$\\
+            &      & $1$  &                  & $-2$ &\\
+        $1$ & $0$  &      & $-2$             &      &\\
+            &      & $-1$ &                  &      &\\
+        $1$ & $0$  &      &                  &      &\\
+        \hline
+        \end{tabular}\\
+        Тогава интерполационния полином ще има вида:
+        \begin{align*}
+        p(x)=L_5(f;x) &= \sum_{k=0}^5f[0,\dotso,1]x\dotso(x-x_{k-1})\\
+        &= f[0] + f[0,0]x+f[0,0,0]x.x+f[0,0,0,1]x.x.x+f[0,0,0,1,1]x.x.x.(x-1)\\
+        &= -1 + x+ x^2 -x^3 -x^4 +x^3 = \boxed{-1 +x +x^2 -x^4}
+        \end{align*}
+    \problem
+        Като използвате формулата за тригонометрична интерползция при равноотдалечени възли, определете коефициентите $a_0, a_1, b_1$ така, че $\tau(x)= \frac{a_0}{2}+a_1cosx+b_1sinx$ да удовлетворява условията $\tau(0)=-1, \tau(\frac{2\pi}{3})=2,\tau(\frac{4\pi}{3})=2$.\\
+    \solution
+        \begin{tcolorbox}[colback=red!5!white,colframe=red!75!black]
+        Теорема.Нека $0\leq x_0<x_1<\ldots<x_{2n}<2\pi$ са дадени възли и $y_0,\ldots,y_{2n}$ са дадени числа. Тогава съществува единствен тригонометричен полином от степен $n - \tau_n(x):\tau_n(x_i)=y_i,i=0,\ldots,2n$, който се задава с формулата
+        \begin{align*}
+        \tau_n(x)&=\sum_{k=0}^{2n}\lambda_k(x)y_k,\text{ където}\\
+        \lambda_k(x)&=\prod_{i=0,i\neq k}^{2n}\frac{sin\left(\frac{x-x_i}{2}\right)}{sin\left(\frac{x_k-x_i}{2}\right)}
+        \end{align*}
+        \end{tcolorbox}
+        Използвайки горната теорема ще пресметнем първо $\lambda$-те:
+        \begin{align*}
+        \lambda_0(x)&=\frac{sin\left(\frac{x-x_1}{2}\right)}{sin\left(\frac{x_0-x_1}{2}\right)}\frac{sin\left(\frac{x-x_2}{2}\right)}{sin\left(\frac{x_0-x_2}{2}\right)} = \frac{sin\left(\frac{x-\frac{2\pi}{3}}{2}\right)}{sin\left(\frac{0-\frac{2\pi}{3}}{2}\right)}\frac{sin\left(\frac{x-\frac{4\pi}{3}}{2}\right)}{sin\left(\frac{0-\frac{4\pi}{3}}{2}\right)}\\
+        & = \frac{sin\left(\frac{x-\frac{2\pi}{3}}{2}\right)}{sin\left(\frac{2\pi}{6}\right)}\frac{sin\left(\frac{x-\frac{4\pi}{3}}{2}\right)}{sin\left(\frac{4\pi}{6}\right)}\\
+        &=\frac{\left(sin\left(\frac{x}{2}\right)cos\left(\frac{2\pi}{6}\right)-cos\left(\frac{x}{2}\right)sin\left(\frac{2\pi}{6}\right)\right)}{sin\left(\frac{2\pi}{6}\right)}
+        \frac{\left(sin\left(\frac{x}{2}\right)cos\left(\frac{4\pi}{6}\right)-cos\left(\frac{x}{2}\right)sin\left(\frac{4\pi}{6}\right)\right)}{sin\left(\frac{4\pi}{6}\right)}\\
+        &=\frac{\left(sin\left(\frac{x}{2}\right)cos\left(\frac{2\pi}{6}\right)-cos\left(\frac{x}{2}\right)sin\left(\frac{2\pi}{6}\right)\right)}{sin\left(\frac{2\pi}{6}\right)}
+        \frac{\left(-sin\left(\frac{x}{2}\right)cos\left(\frac{2\pi}{6}\right)-cos\left(\frac{x}{2}\right)sin\left(\frac{2\pi}{6}\right)\right)}{sin\left(\frac{2\pi}{6}\right)}\\
+        &=\frac{\left(sin\left(\frac{x}{2}\right)\frac{1}{2}-cos\left(\frac{x}{2}\right)\frac{\sqrt3}{2}\right)}{\frac{\sqrt3}{2}}
+        \frac{\left(-sin\left(\frac{x}{2}\right)\frac{1}{2}-cos\left(\frac{x}{2}\right)\frac{\sqrt3}{2}\right)}{\frac{\sqrt3}{2}}\\
+        &=4\frac{\left(sin\left(\frac{x}{2}\right)\frac{1}{2}-cos\left(\frac{x}{2}\right)\frac{\sqrt3}{2}\right)
+        \left(-sin\left(\frac{x}{2}\right)\frac{1}{2}-cos\left(\frac{x}{2}\right)\frac{\sqrt3}{2}\right)}{3}\\
+        &=\frac{1}{4}sin^2\left(\frac{x}{2}\right)-\frac{3}{4}cos^2\left(\frac{x}{2}\right)\\
+        \lambda_1(x)&=\frac{sin\left(\frac{x-x_0}{2}\right)}{sin\left(\frac{x_1-x_0}{2}\right)}\frac{sin\left(\frac{x-x_2}{2}\right)}{sin\left(\frac{x_1-x_2}{2}\right)} = \frac{sin\left(\frac{x-0}{2}\right)}{sin\left(\frac{\frac{2\pi}{3}-0}{2}\right)}\frac{sin\left(\frac{x-\frac{4\pi}{3}}{2}\right)}{sin\left(\frac{\frac{2\pi}{3}-\frac{4\pi}{3}}{2}\right)}\\
+        &=-\frac{sin\left(\frac{x}{2}\right)}{sin\left(\frac{2\pi}{6}\right)}\frac{sin\left(\frac{x-\frac{4\pi}{3}}{2}\right)}{sin\left(\frac{2\pi}{6}\right)}\\
+        &=-4\frac{\left(sin\left(\frac{x}{2}\right)\right)
+        \left(-sin\left(\frac{x}{2}\right)\frac{1}{2}-cos\left(\frac{x}{2}\right)\frac{\sqrt3}{2}\right)}{3}\\
+        \lambda_2(x)&=\frac{sin\left(\frac{x-x_0}{2}\right)}{sin\left(\frac{x_1-x_0}{2}\right)}\frac{sin\left(\frac{x-x_1}{2}\right)}{sin\left(\frac{x_2-x_1}{2}\right)} = \frac{sin\left(\frac{x-0}{2}\right)}{sin\left(\frac{\frac{2\pi}{3}-0}{2}\right)}\frac{sin\left(\frac{x-\frac{2\pi}{3}}{2}\right)}{sin\left(\frac{\frac{4\pi}{3}-\frac{2\pi}{3}}{2}\right)} \\
+        &=\frac{sin\left(\frac{x}{2}\right)}{sin\left(\frac{2\pi}{6}\right)}\frac{sin\left(\frac{x-\frac{2\pi}{3}}{2}\right)}{sin\left(\frac{2\pi}{6}\right)} \\
+        &=4\frac{\left(sin\left(\frac{x}{2}\right)\right)
+        \left(sin\left(\frac{x}{2}\right)\frac{1}{2}-cos\left(\frac{x}{2}\right)\frac{\sqrt3}{2}\right)}{3}\\
+        \end{align*}
+        Тогава за интерполационния полином получаваме:
+        \begin{align*}
+        \tau_1(x)&=\sum_{k=0}^{2}\lambda_k(x)y_k =  \frac{4}{3}\Biggl(
+        \frac{1}{4}sin^2\left(\frac{x}{2}\right)-\frac{3}{4}cos^2\left(\frac{x}{2}\right)\\
+        &-2\left(sin\left(\frac{x}{2}\right)\right)
+        \left(-sin\left(\frac{x}{2}\right)\frac{1}{2}-cos\left(\frac{x}{2}\right)\frac{\sqrt3}{2}\right)\\&+2\left(sin\left(\frac{x}{2}\right)\right)
+        \left(sin\left(\frac{x}{2}\right)\frac{1}{2}-cos\left(\frac{x}{2}\right)\frac{\sqrt3}{2}\right)\Biggr)\\
+        &=\frac{4}{3}\Biggl(\frac{1}{4}sin^2\left(\frac{x}{2}\right)-\frac{3}{4}cos^2\left(\frac{x}{2}\right)\\
+        &+\left(sin\left(\frac{x}{2}\right)\right)
+        \left(2sin\left(\frac{x}{2}\right)\frac{1}{2}+2cos\left(\frac{x}{2}\right)\frac{\sqrt3}{2}
+        +2sin\left(\frac{x}{2}\right)\frac{1}{2}-2cos\left(\frac{x}{2}\right)\frac{\sqrt3}{2}\right)\Biggr)\\
+        &=\frac{4}{3}\Biggl(\frac{1}{4}sin^2\left(\frac{x}{2}\right)-\frac{3}{4}cos^2\left(\frac{x}{2}\right)+2sin^2\left(\frac{x}{2}\right)\Biggr)\\
+        &=\frac{4}{3}\biggl(3sin^2\left(\frac{x}{2}\right)-\frac{3}{4}\biggr)=
+        \boxed{1-2cos(x)}
+        \end{align*}
+        Следователнно $a_0=2, a_1=-2, b1=0$.
+    \problem
+        Да се намери явния вид на $B(1,2,4,t)$ за $t\in[1,4]$.\\
+    \solution
+    % Използваме основната рекурентна връзка:
+    % \begin{equation*}
+    % B_{i,r+1} = \frac{t-t_i}{t_{i+r}-t_i}B_{i,r}(t) + \frac{t_{i+r+1}-t}{t_{i+r}-t_{i+1}}B_{i+1,r}(t)
+    % \end{equation*}
+    % //виж как може да я ползваш при сметките
+        Използваме 
+        \begin{equation*}
+        B(t_0,t_1,t_2,t)=\begin{cases}
+                           \frac{t-t_0}{(t_2-t_0)(t_1-t_0)},\hfill t\in[t_0,t_1]\\
+                           \frac{t_2-t}{(t_2-t_0)(t_2-t_1)},\hfill t\in[t_1,t_2]\\
+                           0\hfill,\text{ иначе}
+                         \end{cases}.
+        \end{equation*}
+        И получаваме
+        \begin{equation*}
+        B(1,2,4,t)=\begin{cases}
+                     \frac{t-1}{(4-1)(2-1)},\hfill t\in[1,2]\\
+                     \frac{4-t}{(4-2)(4-1)},\hfill t\in[2,4]\\
+                     0\hfill,\text{ иначе}
+                   \end{cases} =
+                   \begin{cases}
+                     \frac{t-1}{3},\hfill t\in[1,2]\\
+                     \frac{4-t}{6},\hfill t\in[2,4]\\
+                     0\hfill,\text{ иначе}
+                   \end{cases}. 
+        \end{equation*}
+    \problem
+        Да се намери полинома на най-добро равномерно приближение от $\pi_1$ за функцията $f(x) = \left|x-\frac{1}{2}\right|$ в $[-1,1]$ и $E_1(f)$.\\
+    \solution
+        //Избираме средната точка да е там където полинома си сменя знака
+        Нека $-1, \frac{1}{2}, 1$ са точки на алтернанс, тоест
+        \begin{equation*}
+        E_1(f) = +[f(-1)-p(-1)]=-[f(\frac{1}{2})-p(\frac{1}{2})]=+[f(1)-p(1)]
+        \end{equation*}
+        и търсения полином е $p(x) = ax+b$.
+        //Направи го и за произволна точка t.
+        Тогава
+        \begin{align*}
+        \frac{3}{2} + a - b &= \frac{1}{2}a + b = \frac{1}{2} - a - b\\
+        \frac{3}{2} + a - b &=\frac{1}{2} - a - b\Rightarrow 2a = -1 
+        \Rightarrow \boxed{a = -\frac{1}{2}}\\
+        \frac{3}{2} + a - b &= \frac{1}{2}a + b \Rightarrow 2b = \frac{3}{2} + \frac{1}{2}a \Rightarrow \boxed{b = \frac{5}{8}}
+        \Rightarrow p(x) = \frac{1}{2}a-\frac{5}{8}
+        \end{align*}.
+        От $p(x)$ линейна функция, следва че в $[-1,1/2]$ тя достига своите екстремуми в краищата наинтервала и аналогично и за $[1/2,1]$.
+        Тогава $E_1(f) = \underbrace{\frac{3}{2} -\frac{1}{2} - \frac{5}{8}}_{\frac{3}{8}} = \underbrace{-\frac{1}{2}.\frac{1}{2} + \frac{5}{8}}_\frac{3}{8} = \underbrace{\frac{1}{2} + \frac{1}{2} - \frac{5}{8}}_\frac{3}{8}\Rightarrow E_1(f)=\frac{3}{8}$\\
+    \problem
+        Да се намери полинома на най-добро средноквадратично приближение от $\pi_1$ за функцията $f(x) = e^x$ в интервала $[-1,1]$ при тегло $\mu(x)\equiv1.$\\
+    \solution
+        Търсим $p=ax+b$, чиито базисни функции са $\varphi_0=1, \varphi_1=x$.
+        За да минимизираме
+        \begin{equation*}
+        \int_{-1}^{1}\mu(x)(f(x)-p(x))^2dx
+        \end{equation*}
+        Трябва да са изпълнени следните условия за ортогоналноста с $\pi_1$.
+        \begin{align*}
+        &\begin{array}{|c}
+        \int_{-1}^{1}\mu(x)(f(x)-p(x))dx = 0\\
+        \\
+        \int_{-1}^{1}\mu(x)(f(x)-p(x))xdx = 0
+        \end{array}
+        \Leftrightarrow
+        \begin{array}{|c}
+        \int_{-1}^{1}(e^x-ax - b)dx = 0\\
+        \int_{-1}^{1}(e^x -ac - b)xdx = 0 
+        \end{array}\\
+        \Rightarrow
+        &\begin{array}{|c}
+        \int_{-1}^{1}e^xdx = a\int_{-1}^{1}xdx+b\int_{-1}^{1}dx\\
+        \\
+        \int_{-1}^{1}e^xxdx = a\int_{-1}^{1}x^2dx+b\int_{-1}^{1}xdx
+        \end{array}
+        \Rightarrow
+        \begin{array}{|c}
+        e^x\rvert_{-1}^{1} = a\frac{x^2}{2}\rvert_{-1}^{1}+bx\rvert_{-1}^{1}\\
+        \\
+        xe^x\rvert_{-1}^{1} - e^x\rvert_{-1}^{1} = a\frac{x^3}{3}\rvert_{-1}^{1}xdx+b\frac{x^2}{2}\rvert_{-1}^{1}
+        \end{array}\\
+        \Rightarrow
+        &\begin{array}{|c}
+        e-\frac{1}{e}=2b\\
+        \\
+        e + \frac{1}{e} - e + \frac{1}{e} = \frac{2}{3}a
+        \end{array}
+        \Rightarrow
+        \boxed{\begin{array}{|c}
+        b = \frac{1}{2}\left(e-\frac{1}{e}\right)\\
+        \\
+        a = \frac{3}{e}
+        \end{array}}
+        \end{align*}
+        Тогава
+        \begin{equation*}
+        \boxed{p(x) = \frac{3}{e}x + \frac{e}{2} - \frac{1}{2e}}.
+        \end{equation*}
+    \problem
+        Да се намери полинома от $\pi_1$, приближаващ по метода на най-малките квадрати таблицата:
+        \begin{equation*}
+        \begin{array}{c|c|c|c|c|}
+        x_i & 0 & 1 & 3 & 4\\
+        \hline
+        f_i & 5 & 2 & 2 & 1
+        \end{array}
+        \end{equation*}
+    \solution
+        Търсим полинома $p(x) \in \pi_1:p(x) =ax+b$, където $\varphi_0(x) = x, \varphi_1(x) = 1$ са базисните полиноми, за който 
+        \begin{equation*}
+        \sum_{i=1}^{4}[f_i-p(x_i)]^2
+        \end{equation*}
+        е минимална.
+        От ортогоналността получаваме системата
+        \begin{align*}
+        &\begin{array}{|c}
+        \sum_{i=1}^{4}[f_i-p(x_i)]^2 = 0\\
+        \sum_{i=1}^{4}[f_i-p(x_i)]^2x=0
+        \end{array}
+        \Leftrightarrow
+        \begin{array}{|c}
+        \sum_{i=1}^{4}[f_i-ax_i-b] = 0\\
+        \sum_{i=1}^{4}[f_i-ax_i-b]x=0
+        \end{array}\\
+        \Rightarrow
+        &\begin{array}{|c}
+        \sum_{i=1}^{4}[f_i] =a\sum_{i=1}^{4}x_i+b\sum_{i=1}^{4}\\
+        \sum_{i=1}^{4}[f_i]x_i=a\sum_{i=1}^{4}x_i^2 + b\sum_{i=1}^{4}x_i
+        \end{array}
+        \Rightarrow
+        \begin{array}{|c}
+        10 = 8a + 4b\\
+        12 = 26a + 8b
+        \end{array}
+        \Rightarrow
+        \boxed{
+        \begin{array}{|c}
+        a = -\frac{4}{5}\\
+        b = \frac{41}{10}
+        \end{array}}
+        \end{align*}
+        Тогава $p(x) = -\frac{4}{5}x+\frac{41}{10}$.\\
+    \problem
+        Напишете съставната квадратурна формула на трапците, осигуряваща пресмятането на $\int_{0}^{1}sinxdx$ с грешка по-малка от $0.01$. Обосновете се като използвате формулата за оценка на грешката
+    \solution
+    Съставните квадратурни формули са:\\
+    \begin{tcolorbox}[colback=red!5!white,colframe=red!75!black]
+        \begin{description}
+            \item[на правоъгълниците]{
+            \begin{equation*}
+                \int_{a}^{b}f(x)dx=\frac{b-a}{m}\sum_{i=0}^{m}f\left(\frac{x_i+x_{i+1}}{2}\right)
+            \end{equation*}
+            \item[на трапците]{
+            \begin{equation*}
+                \int_{a}^{b}f(x)dx=\frac{b-a}{2m}\left (f_0+2\sum_{i=1}^{m-1}f_i+f_m\right )
+            \end{equation*}
+            }
+            \item[на Симпсън]{
+            \begin{equation*}
+                \int_{a}^{b}f(x)dx=\frac{b-a}{6m}\left (f_0+2\sum_{i=1}^{m-1}f_{2i}+4\sum_{i=1}^{m}f_{2i-1}+f_2m\right )
+            \end{equation*}
+            }
+            }
+        \end{description}
+    \end{tcolorbox}
+    Съответните им формули за оценка на грешката:\\
+    \begin{tcolorbox}[colback=red!5!white,colframe=red!75!black]
+        \begin{description}
+            \item[на правоъгълниците]{
+            \begin{equation*}
+                R(f)=\frac{(b-a)^3}{24m^2}f''(\xi), \xi\in[a,b]
+            \end{equation*}
+            \item[на трапците]{
+            \begin{equation*}
+                R(f)=-\frac{(b-a)^3}{12m^3}f''(\xi), \xi\in[a,b]
+            \end{equation*}
+            }
+            \item[на Симпсън]{
+            \begin{equation*}
+                R(f)=-\frac{(b-a)^5}{2880m^4}f_{IV}(\xi), \xi\in[a,b]
+            \end{equation*}
+            }
+            }
+        \end{description}
+    \end{tcolorbox}
+    Тогава използвайки формулата за оценка на грешката на трапците:
+    \begin{align*}
+        R(f)&= - \frac{(1-0)^3}{12m^3}(-sin(\xi)), \xi\in[0,1]\\
+            &= \frac{1}{12m^3}sin(\xi)<0.01
+    \end{align*}
+    Максимума на $sin\xi$ в $[0,1]$ е при $1$, а $sin(1)<sin(\pi)=1$.Тогава:
+    \begin{align*}
+        \frac{1}{12m^3}&<0.01//
+        &\Leftarrow\\
+        100 &<12m^3\\\
+        m   &> \frac{5^{\frac{2}{3}}}{3^\frac{1}{3}}>2\\
+    \end{align*}
+    Следователно $m=3$.
+    Тогава
     \begin{equation*}
-      f[x_0, \dotso, x_n] = \frac{f[x_1, \dotso, x_n] - f[x_0, \dotso, x_{n-1}]}{x_n - x_0},\hspace{12pt}n = 1, \dotso, \infty
+        \boxed{\int_{0}^{1}sin(x)dx\approx\frac{1}{6}\left (sin(0)+2(sin(\frac{1}{3})+sin(\frac{2}{3})+sin(1)\right )}
     \end{equation*}
-    , като приемаме, че $f[x_i] = f(x_i)$
-\end{tcolorbox}
-\begin{tabular}{|c c c c c|}
-\hline
-$x_i$&$f_i$&$f[.,.]$&$f[.,.,.]$&$f[.,.,.,.]$\\
-\hline
-$-2$ & $-8$ &     &      &\\
-     &      & $5$ &      &\\
-$0$  & $2$  &     & $-1$ &\\
-     &      & $2$ &      &$1$\\
-$1$  & $4$  &     & $3$  &\\
-     &      & $8$ &      &\\
-$2$  & $12$ &     &      &\\
-\hline
-\end{tabular}\\
-Използваме формулата на Нютон
-\begin{equation*}
-L_n(f;x) = \sum_{k=0}^nf[x_0,\dotso,x_k](x-x_0)\dotso(x-x_{k-1}),
-\end{equation*}
-като приемаме, че $(x-x_0)\dotso(x-x_{k-1}) = 1$ при $k=0$.
-\begin{align*}
-p(x)=L_3(f;x) &= \sum_{k=0}^3f[-2,\dotso,2](x+2)\dotso(x-x_{k-1})\\
-&=f[-2]+f[-2,0](x+2)x+f[-2,0,1](x+2)x+f[-2,0,1,2](x+2)x(x-1)\\
-&= -8 + 5x+10-x^2-2x+x^3+x^2-2x \\
-&= \boxed{2+x+x^3}
-\end{align*}
-\problem
-Нека $S_k=1^2+\ldots+k^2$ за $k\geq1, S_0=0$. Покажете, че съществува единствен $p\in\pi_3:p(k)=S_k, k=0,1,2,\ldots$. Намерете $S_k$ като използвате формулата на Нютон с крайни разлики за интерполация напред.\\
-\solution
-\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black]
-Крайна разлика от $k$-ти ред дефинираме индуктивно по следния начин:
-\begin{align*}
-\Delta^0f_i&=f_i\\
-\Delta^kf_i&=\Delta^{k-1}f_{i+1}-\Delta^{k-1}f_i
-\end{align*}
-\end{tcolorbox}
-Използвайки дефиницията за крайни разлики ще покажем, че всички крайни разлики от 4-ти ред са 0.\\
-\begin{tabular}{|c c c c c c|}
-\hline
-$k$&$S_k$&$\Delta S_k$&$\Delta^2S_k$&$\Delta^3S_k$&$\Delta^4S_k$\\
-\hline
-$0$ & $0$  &      &      &     &     \\
-    &      & $1$  &      &     &     \\
-$1$ & $1$  &      & $3$  &     &     \\
-    &      & $4$  &      & $2$ &     \\
-$2$ & $5$  &      & $5$  &     & $0$ \\
-    &      & $9$  &      & $2$ &     \\
-$3$ & $14$ &      & $7$  &     & $0$ \\
-    &      & $16$ &      & $2$ &     \\
-$4$ & $30$ &      & $9$  &     & $0$ \\
-    &      & $25$ &      & $2$ &     \\
-$5$ & $55$ &      & $11$ &     & $0$ \\
-    &      & $36$ &      & $2$ &     \\
-$6$ & $71$ &      & $13$ &     &     \\
-....& .... &......&......&.....&.....\\
-\hline
-\end{tabular}\\
-От това, че всички крайни разлики от 4-ти ред са 0, следва, че интерполационния полином на $S_k$ е от $\pi_3$.
-За да намерим $p(x)\in\pi_3$ ще използваме формула на Нютон за интерполиране напред.
-Провери формулите
-\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black]
-Формула на Нютон за интерполиране напред в равноотдалечени възли
-\begin{align*}
-L_n(f;x_0+th)=\sum_{k=0}^{n}{t \choose k}\Delta^kf_0
-\end{align*}
-\end{tcolorbox}
-\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black]
-КОМЕНТАР\\
-Формула на Нютон за интерполиране назад в равноотдалечени възли
-\begin{align*}
-L_n(f;x_n+th)=\sum_{k=0}^{n}{t+k-1 \choose k}\Delta^kf_{n-k}
-\end{align*}
-\end{tcolorbox}
-Тоест 
-\begin{align*}
-p(x)=L_n(S;x)&=\sum_{k=0}^{3}{x \choose k}\Delta^kS_0 =
- {x \choose 0}\Delta^0S_0+{x \choose 1}\Delta S_0+{x \choose 2}\Delta^2S_0+{x \choose 3}\Delta^3S_0 \\
-&=0+x.1+\frac{x(x-1)}{2!}.3+\frac{x(x-1)(x-2)}{3!}.2 \\
-&= x+\frac{3x^2-3x}{2}+\frac{2x^3-6x^2+4x}{6}=\frac{6x+9x^2-9x+2x^3-6x^2+4x}{6}\\&=\frac{2x^3+3x^2+x}{6} =\boxed{\frac{x^3}{3}+\frac{x^2}{2} +\frac{x}{6}}
-\end{align*}
-\problem
-Като използвате интерполационна формула на Нютон с разделени разлики с кратни възли, намерете интерполационния полином на Ермит, който усовлетворява условията: $p(0) = -1, p'(0) = 1, p''(0)=2, p(1) =0,p'(1)=-1$. Представете $p(x)$ по степените на $x$.\\
-\solution
-\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black]
-Теорема.Нека $x_0\leq x_1\leq\ldots\leq x_n$ е редица от реални числа и $f(x)$ е достатъчно гладка функция в интервал, който ги съдържа. Тогава
-\begin{align*}
-f[x_0,x_1,\ldots,x_n] = \begin{cases}
-                            \frac{f[x_1,\ldots,x_n]-f[x_0,\ldots,x_{n-1}]}{x_n-x_0},x_0<x_1<\ldots<x_n\\
-                            \frac{f^{(n)}(x_0)}{n!} , x_0=x_1=\ldots=x_n
-                        \end{cases}
-\end{align*}
-\end{tcolorbox}
-Използвайки горната теорема ще пресметнем таблицата с разделените разлики:
-\begin{tabular}{|c c c c c c|}
-\hline
-$x_i$&$f_i$&$f[.,.]$&$f[.,.,.]$&$f[.,.,.,.]$\\
-\hline
-$0$ & $-1$ &      &                  &      &\\
-    &      & $1$  &                  &      &\\
-$0$ & $-1$ &      & $\frac{2}{2!}$=1 &      &\\
-    &      & $1$  &                  & $-1$ &\\
-$0$ & $-1$ &      & $0$              &      & $-1$\\
-    &      & $1$  &                  & $-2$ &\\
-$1$ & $0$  &      & $-2$             &      &\\
-    &      & $-1$ &                  &      &\\
-$1$ & $0$  &      &                  &      &\\
-\hline
-\end{tabular}\\
-Тогава интерполационния полином ще има вида:
-\begin{align*}
-p(x)=L_5(f;x) &= \sum_{k=0}^5f[0,\dotso,1]x\dotso(x-x_{k-1})\\
-&= f[0] + f[0,0]x+f[0,0,0]x.x+f[0,0,0,1]x.x.x+f[0,0,0,1,1]x.x.x.(x-1)\\
-&= -1 + x+ x^2 -x^3 -x^4 +x^3 = \boxed{-1 +x +x^2 -x^4}
-\end{align*}
-\problem
-Като използвате формулата за тригонометрична интерползция при равноотдалечени възли, определете коефициентите $a_0, a_1, b_1$ така, че $\tau(x)= \frac{a_0}{2}+a_1cosx+b_1sinx$ да удовлетворява условията $\tau(0)=-1, \tau(\frac{2\pi}{3})=2,\tau(\frac{4\pi}{3})=2$.\\
-\solution
-\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black]
-Теорема.Нека $0\leq x_0<x_1<\ldots<x_{2n}<2\pi$ са дадени възли и $y_0,\ldots,y_{2n}$ са дадени числа. Тогава съществува единствен тригонометричен полином от степен $n - \tau_n(x):\tau_n(x_i)=y_i,i=0,\ldots,2n$, който се задава с формулата
-\begin{align*}
-\tau_n(x)&=\sum_{k=0}^{2n}\lambda_k(x)y_k,\text{ където}\\
-\lambda_k(x)&=\prod_{i=0,i\neq k}^{2n}\frac{sin\left(\frac{x-x_i}{2}\right)}{sin\left(\frac{x_k-x_i}{2}\right)}
-\end{align*}
-\end{tcolorbox}
-Използвайки горната теорема ще пресметнем първо $\lambda$-те:
-\begin{align*}
-\lambda_0(x)&=\frac{sin\left(\frac{x-x_1}{2}\right)}{sin\left(\frac{x_0-x_1}{2}\right)}\frac{sin\left(\frac{x-x_2}{2}\right)}{sin\left(\frac{x_0-x_2}{2}\right)} = \frac{sin\left(\frac{x-\frac{2\pi}{3}}{2}\right)}{sin\left(\frac{0-\frac{2\pi}{3}}{2}\right)}\frac{sin\left(\frac{x-\frac{4\pi}{3}}{2}\right)}{sin\left(\frac{0-\frac{4\pi}{3}}{2}\right)}\\
-& = \frac{sin\left(\frac{x-\frac{2\pi}{3}}{2}\right)}{sin\left(\frac{2\pi}{6}\right)}\frac{sin\left(\frac{x-\frac{4\pi}{3}}{2}\right)}{sin\left(\frac{4\pi}{6}\right)}\\
-&=\frac{\left(sin\left(\frac{x}{2}\right)cos\left(\frac{2\pi}{6}\right)-cos\left(\frac{x}{2}\right)sin\left(\frac{2\pi}{6}\right)\right)}{sin\left(\frac{2\pi}{6}\right)}
-\frac{\left(sin\left(\frac{x}{2}\right)cos\left(\frac{4\pi}{6}\right)-cos\left(\frac{x}{2}\right)sin\left(\frac{4\pi}{6}\right)\right)}{sin\left(\frac{4\pi}{6}\right)}\\
-&=\frac{\left(sin\left(\frac{x}{2}\right)cos\left(\frac{2\pi}{6}\right)-cos\left(\frac{x}{2}\right)sin\left(\frac{2\pi}{6}\right)\right)}{sin\left(\frac{2\pi}{6}\right)}
-\frac{\left(-sin\left(\frac{x}{2}\right)cos\left(\frac{2\pi}{6}\right)-cos\left(\frac{x}{2}\right)sin\left(\frac{2\pi}{6}\right)\right)}{sin\left(\frac{2\pi}{6}\right)}\\
-&=\frac{\left(sin\left(\frac{x}{2}\right)\frac{1}{2}-cos\left(\frac{x}{2}\right)\frac{\sqrt3}{2}\right)}{\frac{\sqrt3}{2}}
-\frac{\left(-sin\left(\frac{x}{2}\right)\frac{1}{2}-cos\left(\frac{x}{2}\right)\frac{\sqrt3}{2}\right)}{\frac{\sqrt3}{2}}\\
-&=4\frac{\left(sin\left(\frac{x}{2}\right)\frac{1}{2}-cos\left(\frac{x}{2}\right)\frac{\sqrt3}{2}\right)
-\left(-sin\left(\frac{x}{2}\right)\frac{1}{2}-cos\left(\frac{x}{2}\right)\frac{\sqrt3}{2}\right)}{3}\\
-&=\frac{1}{4}sin^2\left(\frac{x}{2}\right)-\frac{3}{4}cos^2\left(\frac{x}{2}\right)\\
-\lambda_1(x)&=\frac{sin\left(\frac{x-x_0}{2}\right)}{sin\left(\frac{x_1-x_0}{2}\right)}\frac{sin\left(\frac{x-x_2}{2}\right)}{sin\left(\frac{x_1-x_2}{2}\right)} = \frac{sin\left(\frac{x-0}{2}\right)}{sin\left(\frac{\frac{2\pi}{3}-0}{2}\right)}\frac{sin\left(\frac{x-\frac{4\pi}{3}}{2}\right)}{sin\left(\frac{\frac{2\pi}{3}-\frac{4\pi}{3}}{2}\right)}\\
-&=-\frac{sin\left(\frac{x}{2}\right)}{sin\left(\frac{2\pi}{6}\right)}\frac{sin\left(\frac{x-\frac{4\pi}{3}}{2}\right)}{sin\left(\frac{2\pi}{6}\right)}\\
-&=-4\frac{\left(sin\left(\frac{x}{2}\right)\right)
-\left(-sin\left(\frac{x}{2}\right)\frac{1}{2}-cos\left(\frac{x}{2}\right)\frac{\sqrt3}{2}\right)}{3}\\
-\lambda_2(x)&=\frac{sin\left(\frac{x-x_0}{2}\right)}{sin\left(\frac{x_1-x_0}{2}\right)}\frac{sin\left(\frac{x-x_1}{2}\right)}{sin\left(\frac{x_2-x_1}{2}\right)} = \frac{sin\left(\frac{x-0}{2}\right)}{sin\left(\frac{\frac{2\pi}{3}-0}{2}\right)}\frac{sin\left(\frac{x-\frac{2\pi}{3}}{2}\right)}{sin\left(\frac{\frac{4\pi}{3}-\frac{2\pi}{3}}{2}\right)} \\
-&=\frac{sin\left(\frac{x}{2}\right)}{sin\left(\frac{2\pi}{6}\right)}\frac{sin\left(\frac{x-\frac{2\pi}{3}}{2}\right)}{sin\left(\frac{2\pi}{6}\right)} \\
-&=4\frac{\left(sin\left(\frac{x}{2}\right)\right)
-\left(sin\left(\frac{x}{2}\right)\frac{1}{2}-cos\left(\frac{x}{2}\right)\frac{\sqrt3}{2}\right)}{3}\\
-\end{align*}
-Тогава за интерполационния полином получаваме:
-\begin{align*}
-\tau_1(x)&=\sum_{k=0}^{2}\lambda_k(x)y_k =  \frac{4}{3}\Biggl(
-\frac{1}{4}sin^2\left(\frac{x}{2}\right)-\frac{3}{4}cos^2\left(\frac{x}{2}\right)\\
-&-2\left(sin\left(\frac{x}{2}\right)\right)
-\left(-sin\left(\frac{x}{2}\right)\frac{1}{2}-cos\left(\frac{x}{2}\right)\frac{\sqrt3}{2}\right)\\&+2\left(sin\left(\frac{x}{2}\right)\right)
-\left(sin\left(\frac{x}{2}\right)\frac{1}{2}-cos\left(\frac{x}{2}\right)\frac{\sqrt3}{2}\right)\Biggr)\\
-&=\frac{4}{3}\Biggl(\frac{1}{4}sin^2\left(\frac{x}{2}\right)-\frac{3}{4}cos^2\left(\frac{x}{2}\right)\\
-&+\left(sin\left(\frac{x}{2}\right)\right)
-\left(2sin\left(\frac{x}{2}\right)\frac{1}{2}+2cos\left(\frac{x}{2}\right)\frac{\sqrt3}{2}
-+2sin\left(\frac{x}{2}\right)\frac{1}{2}-2cos\left(\frac{x}{2}\right)\frac{\sqrt3}{2}\right)\Biggr)\\
-&=\frac{4}{3}\Biggl(\frac{1}{4}sin^2\left(\frac{x}{2}\right)-\frac{3}{4}cos^2\left(\frac{x}{2}\right)+2sin^2\left(\frac{x}{2}\right)\Biggr)\\
-&=\frac{4}{3}\biggl(3sin^2\left(\frac{x}{2}\right)-\frac{3}{4}\biggr)=
-\boxed{1-2cos(x)}
-\end{align*}
-Следователнно $a_0=2, a_1=-2, b1=0$.
-\problem
-Да се намери явния вид на $B(1,2,4,t)$ за $t\in[1,4]$.\\
-\solution
-% Използваме основната рекурентна връзка:
-% \begin{equation*}
-% B_{i,r+1} = \frac{t-t_i}{t_{i+r}-t_i}B_{i,r}(t) + \frac{t_{i+r+1}-t}{t_{i+r}-t_{i+1}}B_{i+1,r}(t)
-% \end{equation*}
-% //виж как може да я ползваш при сметките
-Използваме 
-\begin{equation*}
-B(t_0,t_1,t_2,t)=\begin{cases}
-                   \frac{t-t_0}{(t_2-t_0)(t_1-t_0)},\hfill t\in[t_0,t_1]\\
-                   \frac{t_2-t}{(t_2-t_0)(t_2-t_1)},\hfill t\in[t_1,t_2]\\
-                   0\hfill,\text{ иначе}
-                 \end{cases}.
-\end{equation*}
-И получаваме
-\begin{equation*}
-B(1,2,4,t)=\begin{cases}
-             \frac{t-1}{(4-1)(2-1)},\hfill t\in[1,2]\\
-             \frac{4-t}{(4-2)(4-1)},\hfill t\in[2,4]\\
-             0\hfill,\text{ иначе}
-           \end{cases} =
-           \begin{cases}
-             \frac{t-1}{3},\hfill t\in[1,2]\\
-             \frac{4-t}{6},\hfill t\in[2,4]\\
-             0\hfill,\text{ иначе}
-           \end{cases}. 
-\end{equation*}
-\problem
-Да се намери полинома на най-добро равномерно приближение от $\pi_1$ за функцията $f(x) = \left|x-\frac{1}{2}\right|$ в $[-1,1]$ и $E_1(f)$.\\
-\solution
-//Избираме средната точка да е там където полинома си сменя знака
-Нека $-1, \frac{1}{2}, 1$ са точки на алтернанс, тоест
-\begin{equation*}
-E_1(f) = +[f(-1)-p(-1)]=-[f(\frac{1}{2})-p(\frac{1}{2})]=+[f(1)-p(1)]
-\end{equation*}
-и търсения полином е $p(x) = ax+b$.
-//Направи го и за произволна точка t.
-Тогава
-\begin{align*}
-\frac{3}{2} + a - b &= \frac{1}{2}a + b = \frac{1}{2} - a - b\\
-\frac{3}{2} + a - b &=\frac{1}{2} - a - b\Rightarrow 2a = -1 
-\Rightarrow \boxed{a = -\frac{1}{2}}\\
-\frac{3}{2} + a - b &= \frac{1}{2}a + b \Rightarrow 2b = \frac{3}{2} + \frac{1}{2}a \Rightarrow \boxed{b = \frac{5}{8}}
-\Rightarrow p(x) = \frac{1}{2}a-\frac{5}{8}
-\end{align*}.
-От $p(x)$ линейна функция, следва че в $[-1,1/2]$ тя достига своите екстремуми в краищата наинтервала и аналогично и за $[1/2,1]$.
-Тогава $E_1(f) = \underbrace{\frac{3}{2} -\frac{1}{2} - \frac{5}{8}}_{\frac{3}{8}} = \underbrace{-\frac{1}{2}.\frac{1}{2} + \frac{5}{8}}_\frac{3}{8} = \underbrace{\frac{1}{2} + \frac{1}{2} - \frac{5}{8}}_\frac{3}{8}\Rightarrow E_1(f)=\frac{3}{8}$\\
-\problem
-Да се намери полинома на най-добро средноквадратично приближение от $\pi_1$ за функцията $f(x) = e^x$ в интервала $[-1,1]$ при тегло $\mu(x)\equiv1.$\\
-\solution
-Търсим $p=ax+b$, чиито базисни функции са $\varphi_0=1, \varphi_1=x$.
-За да минимизираме
-\begin{equation*}
-\int_{-1}^{1}\mu(x)(f(x)-p(x))^2dx
-\end{equation*}
-Трябва да са изпълнени следните условия за ортогоналноста с $\pi_1$.
-\begin{align*}
-&\begin{array}{|c}
-\int_{-1}^{1}\mu(x)(f(x)-p(x))dx = 0\\
-\\
-\int_{-1}^{1}\mu(x)(f(x)-p(x))xdx = 0
-\end{array}
-\Leftrightarrow
-\begin{array}{|c}
-\int_{-1}^{1}(e^x-ax - b)dx = 0\\
-\int_{-1}^{1}(e^x -ac - b)xdx = 0 
-\end{array}\\
-\Rightarrow
-&\begin{array}{|c}
-\int_{-1}^{1}e^xdx = a\int_{-1}^{1}xdx+b\int_{-1}^{1}dx\\
-\\
-\int_{-1}^{1}e^xxdx = a\int_{-1}^{1}x^2dx+b\int_{-1}^{1}xdx
-\end{array}
-\Rightarrow
-\begin{array}{|c}
-e^x\rvert_{-1}^{1} = a\frac{x^2}{2}\rvert_{-1}^{1}+bx\rvert_{-1}^{1}\\
-\\
-xe^x\rvert_{-1}^{1} - e^x\rvert_{-1}^{1} = a\frac{x^3}{3}\rvert_{-1}^{1}xdx+b\frac{x^2}{2}\rvert_{-1}^{1}
-\end{array}\\
-\Rightarrow
-&\begin{array}{|c}
-e-\frac{1}{e}=2b\\
-\\
-e + \frac{1}{e} - e + \frac{1}{e} = \frac{2}{3}a
-\end{array}
-\Rightarrow
-\boxed{\begin{array}{|c}
-b = \frac{1}{2}\left(e-\frac{1}{e}\right)\\
-\\
-a = \frac{3}{e}
-\end{array}}
-\end{align*}
-Тогава
-\begin{equation*}
-\boxed{p(x) = \frac{3}{e}x + \frac{e}{2} - \frac{1}{2e}}.
-\end{equation*}
-\problem
-Да се намери полинома от $\pi_1$, приближаващ по метода на най-малките квадрати таблицата:
-\begin{equation*}
-\begin{array}{c|c|c|c|c|}
-x_i & 0 & 1 & 3 & 4\\
-\hline
-f_i & 5 & 2 & 2 & 1
-\end{array}
-\end{equation*}
-\solution
-Търсим полинома $p(x) \in \pi_1:p(x) =ax+b$, където $\varphi_0(x) = x, \varphi_1(x) = 1$ са базисните полиноми, за който 
-\begin{equation*}
-\sum_{i=1}^{4}[f_i-p(x_i)]^2
-\end{equation*}
-е минимална.
-От ортогоналността получаваме системата
-\begin{align*}
-&\begin{array}{|c}
-\sum_{i=1}^{4}[f_i-p(x_i)]^2 = 0\\
-\sum_{i=1}^{4}[f_i-p(x_i)]^2x=0
-\end{array}
-\Leftrightarrow
-\begin{array}{|c}
-\sum_{i=1}^{4}[f_i-ax_i-b] = 0\\
-\sum_{i=1}^{4}[f_i-ax_i-b]x=0
-\end{array}\\
-\Rightarrow
-&\begin{array}{|c}
-\sum_{i=1}^{4}[f_i] =a\sum_{i=1}^{4}x_i+b\sum_{i=1}^{4}\\
-\sum_{i=1}^{4}[f_i]x_i=a\sum_{i=1}^{4}x_i^2 + b\sum_{i=1}^{4}x_i
-\end{array}
-\Rightarrow
-\begin{array}{|c}
-10 = 8a + 4b\\
-12 = 26a + 8b
-\end{array}
-\Rightarrow
-\boxed{
-\begin{array}{|c}
-a = -\frac{4}{5}\\
-b = \frac{41}{10}
-\end{array}}
-\end{align*}
-Тогава $p(x) = -\frac{4}{5}x+\frac{41}{10}$.\\
+    \problem
+    Намерете с грешка по малка от $0.001$ положителен корен на уравнението $x^3-2x-5=0$ по метода на:
+    \begin{enumerate}[a]
+        \item{nfnkm}
+    \end{enumerate}
 \begin{center}{\section*{Втори тип}}\end{center}
-\setcounter{problem}{6}
-\problem
-Нека $B(x_0,\ldots,x_r;t)$  е  В-сплайнът от степен $r-1$ с възли $x0<\ldots<x_r.$ Да се намери $\int_{x_0}^{x_r}B(x_0,\ldots,x_r,t)dt$. Отговорът да се представи като функция зависеща само от $r$.
-\\
-\solution
-\begin{equation*}
-B(x_0,\ldots,x_r;t)=(x-t)^{r-1}_+[x_0,\ldots,x_r]=\sum_{k=0}^{r}c_k(x_k-t)^{r-1}_+, \text{където} c_k = \frac{1}{w'(x_k)}
-\end{equation*}.
-От
-\begin{equation*}
-f[x_0,\ldots,x_r] = \sum_{k=0}^{r}c_kf(x_k).
-\end{equation*}
-Разглеждаме за някое $k$ примитивната
-\begin{equation*}
-\int (x_k-t)^{r-1}dt = \frac{(x_k-t)^r}{-r},
-\end{equation*}
-където $(x_k-t)<0$ и $-r<0$ тоест $\frac{(x_k-t)^r}{-r}<0$. Тогава
-\begin{align*}
-&\int_{x_0}^{x_r}B(x_0,\ldots,x_r;t)dt = 
-\sum_{k=0}^{r}c_k\int_{x_0}^{x_r}(x_k-t)^{r-1}_+
-=\left.\left(\frac{-1}{r}\sum_{k=0}^{r}x_k(x_k-t)^r_+\right)\right\rvert_{x_0}^{x_r} \\
-&= -\frac{1}{r}(x-t)^r_+[x_0,\ldots,x_r]\rvert_{x_0}^{x_r} 
-= -\frac{1}{r}((x-x_r)^r_+[x_0,\ldots,x_r] - (x-x_0)^r_+[x_0,\ldots,x_r]) \\
-&= -\frac{1}{r}(0 - (x-x_0)^r_+[x_0,\ldots,x_r]) \\
-&(x-x_0)^r_+[x_0,\ldots,x_r] - \text{коефициента пред } x^r = 1.
-\end{align*}
-Тогава $\boxed{\int_{x_0}^{x_r}B(x_0,\ldots,x_r;t)dt = \frac{1}{r}}$\\
-\problem
-Да се докаже, че най-доброто равномерно приближение с полиноми от $\pi_n$ за функцията $f(x) = cos\r x$ в $[-1,1]$ удовлетворява неравенството: $E_n(f) \leq \frac{1}{2^n(n+1)!}$.\\
-\solution
-\begin{equation*}
-E_n(f) = \underset{p*\in\pi_n}{min\text{ }\rho(f;p*)}\leq \rho(f;p),\forall p\in\pi_n.
-\end{equation*}
-Нека $p$ е интерполационния полином на Лагранж във възлите $\xi_0,\ldots,\xi_n$, които са нулите на $T_{n+1} = cos\left((n+1) arccos \r x\right)$.
-\begin{equation*}
-\rho(f;p)=\underset{x\in [-1,1]}{max}|f(x)-p(x)|
-\end{equation*}
-\begin{equation*}
-|f(x)-p(x)| = \left |\frac{f^{(n+1)}(\xi)}{(n+1)!}(x-\xi_0)\ldots(x-\xi_n)\right| \leq \frac{1}{(n+1)!}.\frac{1}{2^n}|T_{n+1}(x)|\leq\frac{1}{2^n (n+1)!}
-\end{equation*}
-От $T_{n+1}(x)=c(x-\xi_0)\ldots(x-\xi_n)$, следва че $|T_{n+1}|\leq 1$.\\
-\problem
-Докажете, че ако ако $f\in C^1[0,1]$ то за производната на полинома на Бернщайн е изпълнено:
-\begin{equation*}
-B'_{n+1}(f;x)=\sum_{k=0}^{n}f'(\xi_k){n\choose k}x^k(1-x)^{n-k},
-\end{equation*}
-където $\xi_k\in\left[\frac{k}{n+1}\frac{k+1}{n+1}\right], k=0,\ldots,n$.\\
-\solution
-Имаме, че 
-\begin{equation*}
-B_{n+1}(f;t)=\sum_{k=0}^{n+1}{n+1 \choose k} f\left(\frac{k}{n+1}\right)  t^{k-1}(1-t)^{n+1-k}.
-\end{equation*}
-Диференцираме по $t$.
-\begin{align*}
-B'_{n+1}(f;t) &= \sum_{k=1}^{n+1}{n+1 \choose k} f\left(\frac{k}{n+1}\right)kt_{k-1}(1-t)^{n+1-k} \\&+ \sum_{k=0}^{n}{n+1 \choose k} f\left(\frac{k}{n+1}\right)(n+1-k)t^k(1-t)^{n-k}(-1).
-\end{align*}
-Първата сума започва от $k=1$, защото за $к=0$ е 0, аналогично втората сума е до $k=n$.\\
-За първата сума полагаме $j = k-1$.
-\begin{align*}
-B'_{n+1}(f;t) &= \sum_{j=0}^{n}{n+1 \choose j+1} f\left(\frac{j+1}{n+1}\right)(j+1)t_{j}(1-t)^{n-j} \\&- \sum_{k=0}^{n}{n+1 \choose k} f\left(\frac{k}{n+1}\right)(n+1-k)t^k(1-t)^{n-k} \\&=\sum_{k=0}^{n}{n+1 \choose k+1} f\left(\frac{k+1}{n+1}\right)(k+1)t_{k}(1-t)^{n-k} \\&- \sum_{k=0}^{n}{n+1 \choose k} f\left(\frac{k}{n+1}\right)(n+1-k)t^k(1-t)^{n-k} \\&=\sum_{k=0}^{n}t^k(1-t)^{n-k}\left({n+1 \choose k+1} f\left(\frac{k+1}{n+1}\right)(k+1)-{n+1 \choose k} f\left(\frac{k}{n+1}\right)(n+1-k)\right)\\&=\sum_{k=0}^n={n \choose k} t^k (1-t)^{n-k} (n+1)\left(f\left(\frac{k+1}{n+1}\right)-f\left(\frac{k}{n+1}\right)\right).
-\end{align*}
-От теоремата на Лагранж получаваме, че за някаква средна точка $\xi_k\in\left[\frac{k}{n+1}\frac{k+1}{n+1}\right]$ е изпълнено
-\begin{equation*}
-B'_{n+1}(f;t)=\sum_{k=0}^n={n \choose k} t^k (1-t)^{n-k} (n+1)f'(\xi_k)\left(\frac{k+1}{n+1}-\frac{k}{n+1}\right).
-\end{equation*}
-Откъдето
-\begin{equation*}
-B'_{n+1}(f;t)=\sum_{k=0}^n={n \choose k} t^k (1-t)^{n-k}f'(\xi_k)
-\end{equation*}
-\problem
-Да се докаже, че полиномите на Льожандър 
-\begin{equation*}
-L_n(x) = \frac{1}{2^n n!}\left((x^2-1)^n\right)^{(n)}
-\end{equation*}
-удовлетворяват
-\begin{equation*}
-\int_{-1}^{1}L_n^2(x)dx=\frac{2}{2n+1}
-\end{equation*} 
-(Упътване: $L_n(1)=1, L_n(-1)=(-1)^n$.)\\
-\solution
-\begin{align*}
-I=\int_{-1}^{1}L_n^2(x)dx = xL_n^2(x)\rvert_{-1}^1-2\int_{-1}^{1}L_n(x)L'(x)xdx.
-\end{align*}
-Имаме, че
-\begin{align*}
-L_n(x) = \alpha_nx^n + \ldots\\
-L'_n(x)= n\alpha_nx^{n-1} + \ldots
-\end{align*}
+    \setcounter{problem}{6}
+    \problem
+        Нека $B(x_0,\ldots,x_r;t)$  е  В-сплайнът от степен $r-1$ с възли $x0<\ldots<x_r.$ Да се намери $\int_{x_0}^{x_r}B(x_0,\ldots,x_r,t)dt$. Отговорът да се представи като функция зависеща само от $r$.
+    \\
+    \solution
+        \begin{equation*}
+        B(x_0,\ldots,x_r;t)=(x-t)^{r-1}_+[x_0,\ldots,x_r]=\sum_{k=0}^{r}c_k(x_k-t)^{r-1}_+, \text{където} c_k = \frac{1}{w'(x_k)}
+        \end{equation*}.
+        От
+        \begin{equation*}
+        f[x_0,\ldots,x_r] = \sum_{k=0}^{r}c_kf(x_k).
+        \end{equation*}
+        Разглеждаме за някое $k$ примитивната
+        \begin{equation*}
+        \int (x_k-t)^{r-1}dt = \frac{(x_k-t)^r}{-r},
+        \end{equation*}
+        където $(x_k-t)<0$ и $-r<0$ тоест $\frac{(x_k-t)^r}{-r}<0$. Тогава
+        \begin{align*}
+        &\int_{x_0}^{x_r}B(x_0,\ldots,x_r;t)dt = 
+        \sum_{k=0}^{r}c_k\int_{x_0}^{x_r}(x_k-t)^{r-1}_+
+        =\left.\left(\frac{-1}{r}\sum_{k=0}^{r}x_k(x_k-t)^r_+\right)\right\rvert_{x_0}^{x_r} \\
+        &= -\frac{1}{r}(x-t)^r_+[x_0,\ldots,x_r]\rvert_{x_0}^{x_r} 
+        = -\frac{1}{r}((x-x_r)^r_+[x_0,\ldots,x_r] - (x-x_0)^r_+[x_0,\ldots,x_r]) \\
+        &= -\frac{1}{r}(0 - (x-x_0)^r_+[x_0,\ldots,x_r]) \\
+        &(x-x_0)^r_+[x_0,\ldots,x_r] - \text{коефициента пред } x^r = 1.
+        \end{align*}
+        Тогава $\boxed{\int_{x_0}^{x_r}B(x_0,\ldots,x_r;t)dt = \frac{1}{r}}$\\
+    \problem
+        Да се докаже, че най-доброто равномерно приближение с полиноми от $\pi_n$ за функцията $f(x) = cos\r x$ в $[-1,1]$ удовлетворява неравенството: $E_n(f) \leq \frac{1}{2^n(n+1)!}$.\\
+    \solution
+        \begin{equation*}
+        E_n(f) = \underset{p*\in\pi_n}{min\text{ }\rho(f;p*)}\leq \rho(f;p),\forall p\in\pi_n.
+        \end{equation*}
+        Нека $p$ е интерполационния полином на Лагранж във възлите $\xi_0,\ldots,\xi_n$, които са нулите на $T_{n+1} = cos\left((n+1) arccos \r x\right)$.
+        \begin{equation*}
+        \rho(f;p)=\underset{x\in [-1,1]}{max}|f(x)-p(x)|
+        \end{equation*}
+        \begin{equation*}
+        |f(x)-p(x)| = \left |\frac{f^{(n+1)}(\xi)}{(n+1)!}(x-\xi_0)\ldots(x-\xi_n)\right| \leq \frac{1}{(n+1)!}.\frac{1}{2^n}|T_{n+1}(x)|\leq\frac{1}{2^n (n+1)!}
+        \end{equation*}
+        От $T_{n+1}(x)=c(x-\xi_0)\ldots(x-\xi_n)$, следва че $|T_{n+1}|\leq 1$.\\
+    \problem
+        Докажете, че ако ако $f\in C^1[0,1]$ то за производната на полинома на Бернщайн е изпълнено:
+        \begin{equation*}
+        B'_{n+1}(f;x)=\sum_{k=0}^{n}f'(\xi_k){n\choose k}x^k(1-x)^{n-k},
+        \end{equation*}
+        където $\xi_k\in\left[\frac{k}{n+1}\frac{k+1}{n+1}\right], k=0,\ldots,n$.\\
+    \solution
+        Имаме, че 
+        \begin{equation*}
+        B_{n+1}(f;t)=\sum_{k=0}^{n+1}{n+1 \choose k} f\left(\frac{k}{n+1}\right)  t^{k-1}(1-t)^{n+1-k}.
+        \end{equation*}
+        Диференцираме по $t$.
+        \begin{align*}
+        B'_{n+1}(f;t) &= \sum_{k=1}^{n+1}{n+1 \choose k} f\left(\frac{k}{n+1}\right)kt_{k-1}(1-t)^{n+1-k} \\&+ \sum_{k=0}^{n}{n+1 \choose k} f\left(\frac{k}{n+1}\right)(n+1-k)t^k(1-t)^{n-k}(-1).
+        \end{align*}
+        Първата сума започва от $k=1$, защото за $к=0$ е 0, аналогично втората сума е до $k=n$.\\
+        За първата сума полагаме $j = k-1$.
+        \begin{align*}
+        B'_{n+1}(f;t) &= \sum_{j=0}^{n}{n+1 \choose j+1} f\left(\frac{j+1}{n+1}\right)(j+1)t_{j}(1-t)^{n-j} \\&- \sum_{k=0}^{n}{n+1 \choose k} f\left(\frac{k}{n+1}\right)(n+1-k)t^k(1-t)^{n-k} \\&=\sum_{k=0}^{n}{n+1 \choose k+1} f\left(\frac{k+1}{n+1}\right)(k+1)t_{k}(1-t)^{n-k} \\&- \sum_{k=0}^{n}{n+1 \choose k} f\left(\frac{k}{n+1}\right)(n+1-k)t^k(1-t)^{n-k} \\&=\sum_{k=0}^{n}t^k(1-t)^{n-k}\left({n+1 \choose k+1} f\left(\frac{k+1}{n+1}\right)(k+1)-{n+1 \choose k} f\left(\frac{k}{n+1}\right)(n+1-k)\right)\\&=\sum_{k=0}^n={n \choose k} t^k (1-t)^{n-k} (n+1)\left(f\left(\frac{k+1}{n+1}\right)-f\left(\frac{k}{n+1}\right)\right).
+        \end{align*}
+        От теоремата на Лагранж получаваме, че за някаква средна точка $\xi_k\in\left[\frac{k}{n+1}\frac{k+1}{n+1}\right]$ е изпълнено
+        \begin{equation*}
+        B'_{n+1}(f;t)=\sum_{k=0}^n={n \choose k} t^k (1-t)^{n-k} (n+1)f'(\xi_k)\left(\frac{k+1}{n+1}-\frac{k}{n+1}\right).
+        \end{equation*}
+        Откъдето
+        \begin{equation*}
+        B'_{n+1}(f;t)=\sum_{k=0}^n={n \choose k} t^k (1-t)^{n-k}f'(\xi_k)
+        \end{equation*}
+    \problem
+        Да се докаже, че полиномите на Льожандър 
+        \begin{equation*}
+        L_n(x) = \frac{1}{2^n n!}\left((x^2-1)^n\right)^{(n)}
+        \end{equation*}
+        удовлетворяват
+        \begin{equation*}
+        \int_{-1}^{1}L_n^2(x)dx=\frac{2}{2n+1}
+        \end{equation*} 
+        (Упътване: $L_n(1)=1, L_n(-1)=(-1)^n$.)\\
+    \solution
+        \begin{align*}
+        I=\int_{-1}^{1}L_n^2(x)dx = xL_n^2(x)\rvert_{-1}^1-2\int_{-1}^{1}L_n(x)L'(x)xdx.
+        \end{align*}
+        Имаме, че
+        \begin{align*}
+        L_n(x) = \alpha_nx^n + \ldots\\
+        L'_n(x)= n\alpha_nx^{n-1} + \ldots
+        \end{align*}
 
-От $xL'_n(x)= n\alpha_nx^n+\ldots = nL_n(x) + P(x)$ следва, че
-\begin{align*}
-       I&= 2 - 2\int_{-1}^{1}L_n(x)(nL_n(x) + P)dx\\
-        &= 2 - 2\int_{-1}^{1}nL_n^2(x)dx - \underbrace{2\int_{-1}^{1}\underbrace{L_n(x)}_{\text{четна ф-я}}\underbrace{P(x)dx}_{\text{нечетна ф-я}}}_{\text{интеграл на нечетна ф-я в симитричен интервал е 0}}\\
-        &= 2 - 2nI
-\end{align*}
-Следователно $\boxed{I = \frac{2}{1+2n}}$.
+        От $xL'_n(x)= n\alpha_nx^n+\ldots = nL_n(x) + P(x)$ следва, че
+        \begin{align*}
+               I&= 2 - 2\int_{-1}^{1}L_n(x)(nL_n(x) + P)dx\\
+                &= 2 - 2\int_{-1}^{1}nL_n^2(x)dx - \underbrace{2\int_{-1}^{1}\underbrace{L_n(x)}_{\text{четна ф-я}}\underbrace{P(x)dx}_{\text{нечетна ф-я}}}_{\text{интеграл на нечетна ф-я в симитричен интервал е 0}}\\
+                &= 2 - 2nI
+        \end{align*}
+        Следователно $\boxed{I = \frac{2}{1+2n}}$.
 
-\problem
-\problem
+
 \end{document}
