@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.16)  19 JUN 2019 14:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.16)  19 JUN 2019 16:05
 entering extended mode
 **C:/Users/teivanova/Downloads/master/master-degree/NumericalMethods/theory_que
 stions.tex
@@ -447,8 +447,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
  []
 
-[3] [4] [5] [6] [7]
-Overfull \hbox (2.86858pt too wide) in paragraph at lines 258--258
+[3] [4] [5] [6] [7] [8] [9]
+Overfull \hbox (34.92204pt too wide) in paragraph at lines 277--278
+[]\T2A/cmr/m/n/12 При $\OML/cmm/m/it/12 x[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 
+x[]$ \T2A/cmr/m/n/12 раз-глеж-да-ме раз-де-ле-на-та раз-ли-ка $\OML/cmm/m/it/12
+ f\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 x[]; x[]; [] ; x[]\OT1/cmr/m/n/12 ]$
+ []
+
+
+Overfull \hbox (2.86858pt too wide) in paragraph at lines 311--311
 []\T2A/cmr/bx/n/14.4 Изведете фор-му-ла-та от ви-да $\OML/cmm/m/it/14.4 f[]\OT1
 /cmr/m/n/14.4 (\OML/cmm/m/it/14.4 a\OT1/cmr/m/n/14.4 ) \OML/cmm/m/it/14.4 C[]f\
 OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 a \OMS/cmsy/m/n/14.4   \OML/cmm/m/it/14.4 
@@ -456,44 +463,46 @@ h\OT1/cmr/m/n/14.4 ) + \OML/cmm/m/it/14.4 C[]f\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/
 14.4 a \OT1/cmr/m/n/14.4 +
  []
 
-[8]
-Overfull \vbox (180.8102pt too high) has occurred while \output is active []
+[10]
+Overfull \vbox (57.31398pt too high) has occurred while \output is active []
 
 
-[9] [10] [11] [12] (theory_questions.aux) ) 
+[11] [12] [13] [14] (theory_questions.aux) ) 
 Here is how much of TeX's memory you used:
- 2917 strings out of 492973
- 37000 string characters out of 3124920
- 107684 words of memory out of 3000000
- 6766 multiletter control sequences out of 15000+200000
+ 2919 strings out of 492973
+ 37014 string characters out of 3124920
+ 109684 words of memory out of 3000000
+ 6768 multiletter control sequences out of 15000+200000
  21265 words of font info for 58 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 27i,15n,31p,2203b,354s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\teivanova\AppData\Local\M
-iKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\lati1200.pk> <C:\Users\teivanova\App
-Data\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx1200.pk> <C:\Users\t
-eivanova\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx1440.pk>
- <C:\Users\teivanova\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\
-labx1728.pk> <C:\Users\teivanova\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh
--t2a\dpi600\larm1200.pk> <C:\Users\teivanova\AppData\Local\MiKTeX\2.9\fonts\pk\
-ljfour\lh\lh-t2a\dpi600\larm2074.pk> <C:\Users\teivanova\AppData\Local\MiKTeX\2
-.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx2488.pk><C:/Users/teivanova/AppData/Loc
-al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/teiv
-anova/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.p
-fb><C:/Users/teivanova/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmmi6.pfb><C:/Users/teivanova/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/teivanova/AppData/Local/Programs/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/teivanova/AppData/
-Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/te
-ivanova/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.p
-fb><C:/Users/teivanova/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmr8.pfb><C:/Users/teivanova/AppData/Local/Programs/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb><C:/Users/teivanova/AppData/Local/Programs/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/teivanova/AppData/
-Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on theory_questions.pdf (13 pages, 221938 bytes).
+ 27i,15n,31p,2204b,354s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\teivanova\AppData\Local\
+MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\lati1200.pk> <C:\Users\teivanova\Ap
+pData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx1200.pk> <C:\Users\
+teivanova\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx1440.pk
+> <C:\Users\teivanova\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600
+\labx1728.pk> <C:\Users\teivanova\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\l
+h-t2a\dpi600\larm1200.pk> <C:\Users\teivanova\AppData\Local\MiKTeX\2.9\fonts\pk
+\ljfour\lh\lh-t2a\dpi600\larm2074.pk> <C:\Users\teivanova\AppData\Local\MiKTeX\
+2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx2488.pk><C:/Users/teivanova/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/tei
+vanova/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.
+pfb><C:/Users/teivanova/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmmi6.pfb><C:/Users/teivanova/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/teivanova/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/teivanova/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/t
+eivanova/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.
+pfb><C:/Users/teivanova/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmr8.pfb><C:/Users/teivanova/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/teivanova/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/teivanova/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/t
+eivanova/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/
+msbm10.pfb>
+Output written on theory_questions.pdf (15 pages, 240813 bytes).
 PDF statistics:
- 359 PDF objects out of 1000 (max. 8388607)
+ 373 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
