@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.16)  18 JUN 2019 16:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.16)  19 JUN 2019 14:21
 entering extended mode
 **C:/Users/teivanova/Downloads/master/master-degree/NumericalMethods/theory_que
 stions.tex
@@ -27,43 +27,6 @@ File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Users\teivanova\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geome
-try.sty"
-Package: geometry 2018/04/16 v5.8 Page Geometry
-
-("C:\Users\teivanova\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyva
-l.sty"
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks14
-)
-("C:\Users\teivanova\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifp
-df.sty"
-Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
-)
-("C:\Users\teivanova\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifv
-tex.sty"
-Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
-Package ifvtex Info: VTeX not detected.
-)
-("C:\Users\teivanova\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxe
-tex.sty"
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-)
-\Gm@cnth=\count88
-\Gm@cntv=\count89
-\c@Gm@tempcnt=\count90
-\Gm@bindingoffset=\dimen103
-\Gm@wd@mp=\dimen104
-\Gm@odd@mp=\dimen105
-\Gm@even@mp=\dimen106
-\Gm@layoutwidth=\dimen107
-\Gm@layoutheight=\dimen108
-\Gm@layouthoffset=\dimen109
-\Gm@layoutvoffset=\dimen110
-\Gm@dimlist=\toks15
-
-("C:\Users\teivanova\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geome
-try.cfg"))
 ("C:\Users\teivanova\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmat
 h.sty"
 Package: amsmath 2017/09/02 v2.17a AMS math features
@@ -78,68 +41,68 @@ Package: amstext 2000/06/29 v2.01 AMS text
 ("C:\Users\teivanova\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen
 .sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks16
-\ex@=\dimen111
+\@emptytoks=\toks14
+\ex@=\dimen103
 ))
 ("C:\Users\teivanova\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy
 .sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen112
+\pmbraise@=\dimen104
 )
 ("C:\Users\teivanova\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn
 .sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count91
+\inf@bad=\count88
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count92
-\leftroot@=\count93
+\uproot@=\count89
+\leftroot@=\count90
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count94
-\DOTSCASE@=\count95
+\classnum@=\count91
+\DOTSCASE@=\count92
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
 \Mathstrutbox@=\box26
 \strutbox@=\box27
-\big@size=\dimen113
+\big@size=\dimen105
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count96
-\c@MaxMatrixCols=\count97
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
 \dotsspace@=\muskip10
-\c@parentequation=\count98
-\dspbrk@lvl=\count99
-\tag@help=\toks17
-\row@=\count100
-\column@=\count101
-\maxfields@=\count102
-\andhelp@=\toks18
-\eqnshift@=\dimen114
-\alignsep@=\dimen115
-\tagshift@=\dimen116
-\tagwidth@=\dimen117
-\totwidth@=\dimen118
-\lineht@=\dimen119
-\@envbody=\toks19
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks15
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks16
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks17
 \multlinegap=\skip44
 \multlinetaggap=\skip45
-\mathdisplay@stack=\toks20
+\mathdisplay@stack=\toks18
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
 ("C:\Users\teivanova\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amscls\amsthm.
 sty"
 Package: amsthm 2017/10/31 v2.20.4
-\thm@style=\toks21
-\thm@bodyfont=\toks22
-\thm@headfont=\toks23
-\thm@notefont=\toks24
-\thm@headpunct=\toks25
+\thm@style=\toks19
+\thm@bodyfont=\toks20
+\thm@headfont=\toks21
+\thm@notefont=\toks22
+\thm@headpunct=\toks23
 \thm@preskip=\skip46
 \thm@postskip=\skip47
 \thm@headsep=\skip48
-\dth@everypar=\toks26
+\dth@everypar=\toks24
 )
 ("C:\Users\teivanova\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amssy
 mb.sty"
@@ -368,8 +331,8 @@ File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 ("C:\Users\teivanova\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.
 sty"
 Package: inputenc 2018/04/06 v1.3b Input encoding file
-\inpenc@prehook=\toks27
-\inpenc@posthook=\toks28
+\inpenc@prehook=\toks25
+\inpenc@posthook=\toks26
 )
 ("C:\Users\teivanova\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.
 sty"
@@ -395,12 +358,12 @@ Language: bulgarian 2013/10/14 v1.2g Bulgarian support from the babel system
 ("C:\Users\teivanova\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.
 def"
 File: babel.def 2018/06/05 3.22 Babel common definitions
-\babel@savecnt=\count103
-\U@D=\dimen120
+\babel@savecnt=\count100
+\U@D=\dimen112
 
 ("C:\Users\teivanova\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\txtbab
 el.def")
-\bbl@dirlevel=\count104
+\bbl@dirlevel=\count101
 )
 Package babel Info: Using `T2A' as a default Cyrillic encoding on input line 89
 .
@@ -409,115 +372,128 @@ Package bulgarian.ldf Info: Executing the post 3.9 branch for captions on input
 Package bulgarian.ldf Info: Executing the post 3.9 branch for dates on input li
 ne 302.
 Package babel Info: Making " an active character on input line 344.
-)) (theory_questions.aux)
+))
+("C:\Users\teivanova\AppData\Local\Programs\MiKTeX 2.9\tex\latex\enumitem\enumi
+tem.sty"
+Package: enumitem 2019/02/04 v3.8 Customized lists
+\enitkv@toks@=\toks27
+\labelindent=\skip49
+\enit@outerparindent=\dimen113
+\enit@toks=\toks28
+\enit@inbox=\box28
+\enit@count@id=\count102
+\enitdp@description=\count103
+)
+\c@theorem=\count104
+\c@definition=\count105
+\c@feature=\count106
+\c@corollary=\count107
+ (theory_questions.aux)
 \openout1 = `theory_questions.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+ [1
 
-*geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
-*geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
-* paper: a4paper
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(85.35826pt, 426.79135pt, 85.35826pt)
-* v-part:(T,H,B)=(28.45274pt, 759.6886pt, 56.9055pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=426.79135pt
-* \textheight=759.6886pt
-* \oddsidemargin=13.08827pt
-* \evensidemargin=13.08827pt
-* \topmargin=-80.81725pt
-* \headheight=12.0pt
-* \headsep=25.0pt
-* \topskip=12.0pt
-* \footskip=30.0pt
-* \marginparwidth=35.0pt
-* \marginparsep=10.0pt
-* \columnsep=10.0pt
-* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-
-Overfull \hbox (21.90039pt too wide) in paragraph at lines 21--21
-[]\T2A/cmr/bx/n/17.28 Формулирайте ин-тер-по-ла-ци-он-на-та за-да-ча на Лаг-
- []
-
-
-Overfull \hbox (12.54228pt too wide) in paragraph at lines 35--35
-[]\T2A/cmr/bx/n/17.28 Формулирайте ин-тер-по-ла-ци-он-на-та за-да-ча на Ер-
- []
-
-LaTeX Font Info:    Try loading font information for U+msa on input line 42.
+{C:/Users/teivanova/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (theory
+_questions.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 2.
 
 ("C:\Users\teivanova\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.
 fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 42.
+LaTeX Font Info:    Try loading font information for U+msb on input line 2.
 
 ("C:\Users\teivanova\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.
 fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
-
-{C:/Users/teivanova/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Overfull \hbox (3.72368pt too wide) in paragraph at lines 51--51
-\T2A/cmr/bx/n/17.28 ка-же-те я ка-то из-пол-з-ва-те по-ли-но-ми-те на Берн-
+)
+Overfull \hbox (0.13481pt too wide) in paragraph at lines 2--2
+ [][] []\T2A/cmr/m/n/12 Формулирайте ин-тер-по-ла-ци-он-на-та за-да-ча на Лаг-р
+анж. До- 
  []
 
 
-Overfull \hbox (15.32443pt too wide) in paragraph at lines 65--65
-[]\T2A/cmr/bx/n/17.28 Формулирайте и до-ка-же-те те-о-ре-ма-та за прибли-
+Overfull \hbox (3.72482pt too wide) in paragraph at lines 11--11
+ \T2A/cmr/m/n/12 три-го-но-мет-ри-чен по-ли-ном при про-из-вол-но раз-по-ло-же-
+ни ин- 
  []
 
+[1]
+Overfull \hbox (5.6827pt too wide) in paragraph at lines 20--20
+ [][] []\T2A/cmr/m/n/12 Формулирайте и до-ка-же-те те-о-ре-ма-та за квад-ра-тур
+-на-та фор- 
+ []
 
-Overfull \vbox (9.11588pt too high) has occurred while \output is active []
+)
+\tf@toc=\write3
+\openout3 = `theory_questions.toc'.
+
+ [2]
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
+
+ []
+
+[3] [4] [5] [6] [7]
+Overfull \hbox (2.86858pt too wide) in paragraph at lines 258--258
+[]\T2A/cmr/bx/n/14.4 Изведете фор-му-ла-та от ви-да $\OML/cmm/m/it/14.4 f[]\OT1
+/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 a\OT1/cmr/m/n/14.4 ) \OML/cmm/m/it/14.4 C[]f\
+OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 a \OMS/cmsy/m/n/14.4   \OML/cmm/m/it/14.4 
+h\OT1/cmr/m/n/14.4 ) + \OML/cmm/m/it/14.4 C[]f\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/
+14.4 a \OT1/cmr/m/n/14.4 +
+ []
+
+[8]
+Overfull \vbox (180.8102pt too high) has occurred while \output is active []
 
 
-[2] (theory_questions.aux) ) 
+[9] [10] [11] [12] (theory_questions.aux) ) 
 Here is how much of TeX's memory you used:
- 3042 strings out of 492973
- 39016 string characters out of 3124920
- 110661 words of memory out of 3000000
- 6894 multiletter control sequences out of 15000+200000
- 10330 words of font info for 32 fonts, out of 3000000 for 9000
+ 2917 strings out of 492973
+ 37000 string characters out of 3124920
+ 107684 words of memory out of 3000000
+ 6766 multiletter control sequences out of 15000+200000
+ 21265 words of font info for 58 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 27i,4n,31p,2200b,354s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\teivanova\AppData\Local\MiKTeX\2.9\fonts
-\pk\ljfour\lh\lh-t2a\dpi600\larm1200.pk> <C:\Users\teivanova\AppData\Local\MiKT
-eX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx1728.pk><C:/Users/teivanova/AppData
-/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/
-teivanova/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr1
-2.pfb><C:/Users/teivanova/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmr17.pfb><C:/Users/teivanova/AppData/Local/Programs/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on theory_questions.pdf (2 pages, 62313 bytes).
+ 27i,15n,31p,2203b,354s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\teivanova\AppData\Local\M
+iKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\lati1200.pk> <C:\Users\teivanova\App
+Data\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx1200.pk> <C:\Users\t
+eivanova\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx1440.pk>
+ <C:\Users\teivanova\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\
+labx1728.pk> <C:\Users\teivanova\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh
+-t2a\dpi600\larm1200.pk> <C:\Users\teivanova\AppData\Local\MiKTeX\2.9\fonts\pk\
+ljfour\lh\lh-t2a\dpi600\larm2074.pk> <C:\Users\teivanova\AppData\Local\MiKTeX\2
+.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx2488.pk><C:/Users/teivanova/AppData/Loc
+al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/teiv
+anova/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.p
+fb><C:/Users/teivanova/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmmi6.pfb><C:/Users/teivanova/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/teivanova/AppData/Local/Programs/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/teivanova/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/te
+ivanova/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.p
+fb><C:/Users/teivanova/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmr8.pfb><C:/Users/teivanova/AppData/Local/Programs/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb><C:/Users/teivanova/AppData/Local/Programs/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/teivanova/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on theory_questions.pdf (13 pages, 221938 bytes).
 PDF statistics:
- 93 PDF objects out of 1000 (max. 8388607)
+ 359 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
