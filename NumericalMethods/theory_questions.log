@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.16)  19 JUN 2019 16:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.16)  20 JUN 2019 16:06
 entering extended mode
 **C:/Users/teivanova/Downloads/master/master-degree/NumericalMethods/theory_que
 stions.tex
@@ -454,8 +454,18 @@ x[]$ \T2A/cmr/m/n/12 раз-глеж-да-ме раз-де-ле-на-та раз-ли-ка $\OML/cmm/m/it/12
  f\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 x[]; x[]; [] ; x[]\OT1/cmr/m/n/12 ]$
  []
 
+[10]
+Overfull \hbox (3.11058pt too wide) detected at line 327
+[]
+ []
 
-Overfull \hbox (2.86858pt too wide) in paragraph at lines 311--311
+
+Overfull \hbox (318.29628pt too wide) detected at line 339
+[]
+ []
+
+[11]
+Overfull \hbox (2.86858pt too wide) in paragraph at lines 355--355
 []\T2A/cmr/bx/n/14.4 Изведете фор-му-ла-та от ви-да $\OML/cmm/m/it/14.4 f[]\OT1
 /cmr/m/n/14.4 (\OML/cmm/m/it/14.4 a\OT1/cmr/m/n/14.4 ) \OML/cmm/m/it/14.4 C[]f\
 OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 a \OMS/cmsy/m/n/14.4   \OML/cmm/m/it/14.4 
@@ -463,46 +473,42 @@ h\OT1/cmr/m/n/14.4 ) + \OML/cmm/m/it/14.4 C[]f\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/
 14.4 a \OT1/cmr/m/n/14.4 +
  []
 
-[10]
-Overfull \vbox (57.31398pt too high) has occurred while \output is active []
-
-
-[11] [12] [13] [14] (theory_questions.aux) ) 
+[12] [13] [14] [15] [16] (theory_questions.aux) ) 
 Here is how much of TeX's memory you used:
- 2919 strings out of 492973
- 37014 string characters out of 3124920
- 109684 words of memory out of 3000000
- 6768 multiletter control sequences out of 15000+200000
+ 2922 strings out of 492973
+ 37044 string characters out of 3124920
+ 111684 words of memory out of 3000000
+ 6771 multiletter control sequences out of 15000+200000
  21265 words of font info for 58 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  27i,15n,31p,2204b,354s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\teivanova\AppData\Local\
-MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\lati1200.pk> <C:\Users\teivanova\Ap
-pData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx1200.pk> <C:\Users\
-teivanova\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx1440.pk
-> <C:\Users\teivanova\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600
-\labx1728.pk> <C:\Users\teivanova\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\l
-h-t2a\dpi600\larm1200.pk> <C:\Users\teivanova\AppData\Local\MiKTeX\2.9\fonts\pk
-\ljfour\lh\lh-t2a\dpi600\larm2074.pk> <C:\Users\teivanova\AppData\Local\MiKTeX\
-2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx2488.pk><C:/Users/teivanova/AppData/Lo
-cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/tei
-vanova/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.
-pfb><C:/Users/teivanova/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmmi6.pfb><C:/Users/teivanova/AppData/Local/Programs/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/teivanova/AppData/Local/Programs/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/teivanova/AppData
-/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/t
-eivanova/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.
-pfb><C:/Users/teivanova/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmr8.pfb><C:/Users/teivanova/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/teivanova/AppData/Local/Programs/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/teivanova/AppData
-/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/t
-eivanova/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/
-msbm10.pfb>
-Output written on theory_questions.pdf (15 pages, 240813 bytes).
+ <C:\Users\teivanova\AppData\L
+ocal\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\lati1200.pk> <C:\Users\teivano
+va\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx1200.pk> <C:\U
+sers\teivanova\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx14
+40.pk> <C:\Users\teivanova\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\d
+pi600\labx1728.pk> <C:\Users\teivanova\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
+\lh\lh-t2a\dpi600\larm1200.pk> <C:\Users\teivanova\AppData\Local\MiKTeX\2.9\fon
+ts\pk\ljfour\lh\lh-t2a\dpi600\larm2074.pk> <C:\Users\teivanova\AppData\Local\Mi
+KTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx2488.pk><C:/Users/teivanova/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/User
+s/teivanova/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+mi12.pfb><C:/Users/teivanova/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmmi6.pfb><C:/Users/teivanova/AppData/Local/Programs/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/teivanova/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/teivanova/Ap
+pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Us
+ers/teivanova/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmr6.pfb><C:/Users/teivanova/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmr8.pfb><C:/Users/teivanova/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/teivanova/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/teivanova/Ap
+pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Us
+ers/teivanova/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/sym
+bols/msbm10.pfb>
+Output written on theory_questions.pdf (17 pages, 249122 bytes).
 PDF statistics:
- 373 PDF objects out of 1000 (max. 8388607)
+ 379 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

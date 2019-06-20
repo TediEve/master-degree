@@ -294,6 +294,50 @@
     \frac{f[x_1,\ldots,x_k]-f[x_0,\ldots,x_{k-1}]}{x_k-x_0}
   \end{equation*}
 \subsection{Напишете и докажете, формулата за интерполационния тригонометричен полином при произволно разположени интерполационни възли в $[0, 2\pi)$. Напишете задачата, която се решава с тази формула.}
+  \theorem Нека $0\leq x_0<x_1<\ldots<x_{2n}<2\pi$. Тогава за всяка функция $f$ определена в точките $\{x_i\}_0^{2n}$ съществува единствен тригонометричен полином $t_n$ от ред $n$ такъв, че
+  \begin{equation}\label{interp}
+    t_n(x_i)=f(x_i), \hfill i=0,\ldots,2n
+  \end{equation}
+  и той има вида
+  \begin{equation}\label{trigpoly}
+    t_n(x) = \sum_{k=0}^{2n}\lambda_kf(x_k)
+  \end{equation}
+  където
+  \begin{equation}\label{lambdatrig}
+    \lambda_k=\prod_{i=0,i\neq k}^{2n}\frac{sin\left(\frac{x-x_i}{2}\right)}{sin\left(\frac{x_k-x_i}{2}\right)}
+  \end{equation}
+  \proof
+  Функциите $\lambda_k$ удовлетворяват условията
+  \begin{align*}
+    \lambda_k(x_i)&=0, \text{за } i\neq j\\
+    \lambda_k(x_i)&=1, \text{иначе}.
+  \end{align*}
+  От това следва, че изразът \ref{trigpoly} ще удовлетворява интерполационните условия \ref{interp}. Остава само да докажем, че $\lambda_k$, следователно и $t_n$ са тригонометрични полиноми от ред $n$. За целта ще използваме индукция по $n$.\\
+  При $n=1$ :
+  \begin{align*}
+     \lambda_k(x_1) &= sin\left(\frac{x-\alpha}{2}\right)sin\left(\frac{x-\beta}{2}\right) \\
+     &= \frac{1}{2}\left(cos\frac{\beta-\alpha}{2}-cos\left(x-\frac{\alpha+\beta}{2}\right)\right) \\
+     &= \boxed{a_0+a_1cosx+b_1sinx}
+  \end{align*}
+  Следователно $\lambda_k(x)$ е тригонометричен полином от ред $1$.\\
+  Допускаме, че всяко едно произведение от $n-1$ двойки синуси е тригонометричен полином от ред $n-1$. Да разгледаме произволен израз за $\lambda_k(x)$ от вид \ref{lambdatrig}. Той може да се запише по следния начин:
+  \begin{align*}
+    \lambda_k(x)&=c\prod_{i=0, i\neq k}^{2n}sin\left(\frac{x-x_i}{2}\right)\\
+    &=C\left\{\prod_{i=1}^{n-1}sin\left(\frac{x-\alpha_i}{2}sin\left(\frac{x-\beta_i}{2}\right)\right)\right\}\left\{sin\left(\frac{x-\alpha}{2}sin\left(\frac{x-\beta}{2}\right)\right)\right\},
+  \end{align*}
+  където $C$ е константа. Но съгласно идукционното предположение и двата израза в големите скоби са тригонометрични полиноми от ред $n-1$ и $1$ съответно и следователно:
+  \begin{align*}
+    \lambda_k(x)&= \left(a_0+\sum_{k=1}^{n-1}(a_kcos(kx)+b_ksin(kx))\right)(a_0+a_1cosx+b_1sinx)\\
+    &=a_0^2+a_0a_1cosx+a_0b_1sinx + \sum_{k=1}^{n-1}\bigl(a_ka_0cos(kx)+b_ka_0sin(kx)\\
+    &+a_ka_1cosxcos(kx)+b_ka_1cosxsin(kx)\\
+    &+a_kb_1sinxcos(kx)+b_kb_1sinxsin(kx)\bigr)\\
+    &=a_0^2+a_0a_1cosx+a_0b_1sinx + \sum_{k=1}^{n-1}\bigl(a_ka_0cos(kx)+b_ka_0sin(kx)\\
+    &+a_ka_1\frac{1}{2}(cos(k-1)x+cos(k+1)x)\\
+    &+b_ka_1\frac{1}{2}(sin(k+1)x-sin(k-1)x)+a_kb_1\frac{1}{2}(sin(k+1)x-sin(k-1)x)\\
+    &+b_kb_1\frac{1}{2}(cos(k-1)x-cos(k+1)x))\\
+    &=A_0+A_1cosx+B_1sinx+\sum_{k=1}^{n-1}A_{k-1}cos(k-1)x+B_{k-1}sin(k-1)x+A_kcos(kx)+B_ksin(kx)+A_{k+1}cos(n+1)x+B_{k+1}sin(n+1)x
+  \end{align*}
+  Очевидно $\lambda_k(x)$ е линейна комбинация на $sinkx, coskx, k=0,\ldots,n$, което означава, че $\lambda_k$ е тригонометричен полином от ред $n$. Следователно и $t_n$ също е тригонометричен полином от ред $n$ изпълняващ условята \ref{interp} за интерполация.
 \subsection{Формулирайте и докажете теоремата за представяне на сплайн функция,
 като линейна комбинация на полиноми и отсечени степенни функции.}
 
