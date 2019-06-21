@@ -436,7 +436,55 @@
   \end{equation*}
   Но, по определение, $E_n(f)\leq||f-Q||,\forall Q\in\pi_n$. Следователно $E_n(f)=||f-P||$ и $P$ e полином на най-добро равномерно проближение 
 \subsection{Формулирайте теоремата на Вайерщрас. Докажете я като използвате полиномите на Бернщайн.}
-
+  \begin{definition}
+    Нека $f(x)$ е произволна функция, дефинирана в интервала $[0,1]$. Полиномът на Бернщайн от степен $n$ за функцията $f$ се бележи с $B_n(f;t)$ и се определя с равенството:
+    \begin{equation*}
+      B_n(f;t)=\sum_{k=0}^{n}f\left(\frac{k}{n}\right)\genfrac(){0pt}{0}{n}{k}t^k(1-t)^{n-k}
+    \end{equation*}
+  \end{definition}
+  \begin{definition}
+    Нека $f$  е функция дефинирана в $[a,b]$. Величината:
+    \begin{equation*}
+      w(f;\delta)=sup{|f(x)-f(y)|:x,y\in[a,b], |x-y|\leq\delta}
+    \end{equation*}
+    се нарича модул на непрекъснатост на $f $ в $[a,b]$.
+  \end{definition}
+  \theoremНека $f$ е произволна непрекъсната функция в $[0,1]$. Тогава за всяко $n$ и всяко $t\in[0,1]$ имаме
+  \begin{equation}\label{th2}
+    |f(t)-B_n(f;t)|\leq\frac{3}{2}w\left(f;\frac{1}{\sqrt n}\right)
+  \end{equation}
+  \theoremНека $[a,b]$ е произволен краен интервал и $f(x)$ е непрекъсната функция в него. Тогава $\forall\epsilon>0$ съществува алгебричен полином $P(x)$ такъв, че:
+  \begin{equation*}
+    \underset{x\in[a,b]}{max}|f(x)-P(x)|\leq\epsilon.
+  \end{equation*}
+  \proof
+  Въвеждаме функцията:
+  \begin{equation*}
+    h(t)=f(a+t(b-a)), t\in[0,1].
+  \end{equation*}
+  Тъй като $f(x)$ е непрекъсната в $[a,b]$, то и $h(t)$ ще е непрекъсната в $[0,1]$ и следователно
+  \begin{equation*}
+    \lim_{\delta\to0}w(h,\delta) = 0.
+  \end{equation*}
+  Тогава $\exists n:$
+  \begin{equation*}
+    \frac{3}{2}w\left(h;\frac{1}{\sqrt n}\right)<\epsilon
+  \end{equation*}
+  От теорема \ref{th2}
+  \begin{equation*}
+    |h(t)-B_n(h;t)|\leq\frac{3}{2}w\left(h;\frac{1}{\sqrt n}\right)<\epsilon
+  \end{equation*}
+  за това $n$. Тоест полинома $B_n(h;t)$ приблицава $h$ в $[0,1]$ с точност $\epsilon$. Сега, като се върнем обратно към променливата $x $ със смяната $t=\frac{x-a}{b-a}$, получаваме:
+  \begin{equation*}
+    \left|
+    h\left(\frac{x-a}{b-a}\right) - B_n\left(h;\frac{x-a}{b-a}\right)
+    \right|<\epsilon, x\in[a,b].
+  \end{equation*}
+  Където $f(x)=h\left(\frac{x-a}{b-a}\right)$ и $P(x)=B_n\left(h;\frac{x-a}{b-a}\right)$ са алгебрични полиноми от степен $n$. Тогава $P(x)$ е полином, за който
+  \begin{equation*}
+    |f(x)-P(x)|<\epsilon, x\in[a,b].
+  \end{equation*}
+  Доказателството е завършено.
 \subsection{Напишете и докажете тричленната рекуретната връзка за редица от ортогонални полиноми.}
 
 \subsection{Формулирайте и докажете теоремата за характеризация на елемента на най-добро ориближение в хилбартово пространство. (НДУ)}
