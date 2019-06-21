@@ -335,12 +335,64 @@
     &+a_ka_1\frac{1}{2}(cos(k-1)x+cos(k+1)x)\\
     &+b_ka_1\frac{1}{2}(sin(k+1)x-sin(k-1)x)+a_kb_1\frac{1}{2}(sin(k+1)x-sin(k-1)x)\\
     &+b_kb_1\frac{1}{2}(cos(k-1)x-cos(k+1)x))\\
-    &=A_0+A_1cosx+B_1sinx+\sum_{k=1}^{n-1}A_{k-1}cos(k-1)x+B_{k-1}sin(k-1)x+A_kcos(kx)+B_ksin(kx)+A_{k+1}cos(n+1)x+B_{k+1}sin(n+1)x
+    &=A_0+A_1cosx+B_1sinx+\sum_{k=1}^{n-1}A_{k-1}cos(k-1)x\\
+    &+B_{k-1}sin(k-1)x+A_kcos(kx)+B_ksin(kx)+A_{k+1}cos(n+1)x+B_{k+1}sin(n+1)x
   \end{align*}
   Очевидно $\lambda_k(x)$ е линейна комбинация на $sinkx, coskx, k=0,\ldots,n$, което означава, че $\lambda_k$ е тригонометричен полином от ред $n$. Следователно и $t_n$ също е тригонометричен полином от ред $n$ изпълняващ условята \ref{interp} за интерполация.
 \subsection{Формулирайте и докажете теоремата за представяне на сплайн функция,
 като линейна комбинация на полиноми и отсечени степенни функции.}
-
+  \begin{definition}
+    Функцията $s(x)$ се нарича сплайн функция от степен $r$ с възли $x_1<\ldots<x_n$, ако:
+    \begin{enumerate}
+      \item{$s(x)$ е полином от степен най-много $r$ във всеки подинтервал $(x_i,x_{i+1}), i=0,\ldots,n (x_0=-\infty,x_n=+\infty)$}
+      \item{$s(x), s'(x), \ldots, s^{(r-1)}(x)$} са непрекъснати функции в $(-\infty, +\infty)$
+    \end{enumerate}
+  \end{definition}
+  \begin{definition}
+    $S_r(x_1,\ldots,x_n)$ отбелязва множеството от сплайн-функции от степен $r$ свъзли в точките $x_1,\ldots,x_n$. 
+  \end{definition}
+  \begin{definition}
+    Отсечената степенна функция :
+    \begin{equation*}
+      (x-\xi)^r_+=\begin{cases}
+                    (x-\xi)^r\hfill, x\geq\xi\\
+                    0\hfill,x<\xi
+                  \end{cases}
+    \end{equation*}
+    е сплайн от степен $r$ с единствен възел в точката $\xi$.
+  \end{definition}
+  \theoremВсяка сплайн функция $s(x)$ от класа $S_r(x_1,\ldots,x_n)$ се представя по единствен начин от вида:
+  \begin{equation}\label{spline}
+    s(x)=p(x)+\sum_{k=1}^{n}c_k(x-x_k)_+^r,
+  \end{equation}
+  където $p(x)$ е полином от степен $r, a c_1,\ldots,c_n$ са реални числа:
+  \begin{equation}
+    c_k=\frac{s^{(k)}(x_k+0)-s^{(r)}(x_k-0)}{r!}, k=1,\ldots,n
+  \end{equation}
+  \proof
+  Означението $f(x+0)=\lim_{h\to0,h>0}f(x+h)$ и аналогично е за $f(x-0)$.
+  Нека $s(x)\in S_r(x_1,\ldots,x_n).$ Тогава $s$ съвпада с някакъв полином $P_k$ от степен $r$ в подинтервала $(x_k, x_{k+1}), k=0,\ldots,n$. Тъй като $s^{(j)}(x)$ е непрекъсната функция в точката $x_k$, то $P^{(j)}_{k-1}(x_k)=P_{k}^{(j)}(x_k), j=0,\ldots,r-1$. Следователно
+  \begin{equation}\label{recSpline}
+    P_k(x)=P_{k-1}(x)+c_k(x-x_k)^r, \forall x,
+  \end{equation}
+  където $c_k$ е някаква константа. От тази рекурентна връзка следва, че 
+  \begin{equation*}
+    P_k(x)=P_0(x)+\sum_{i=1}^{k}c_i(x-x_i)^r.
+  \end{equation*}
+  Като вземем предвид, че $s(x)\equiv P_k(x), x\in(x_k,x_{k+1})$ и определението за отсечена функция от горното равенство получаваме
+  \begin{equation*}
+    s(x)=P_0(x)+\sum_{i=0}^{n}c_i(x-x_i)_+^r,
+  \end{equation*}
+  което е търсенео представяне. Остава да покажем, че коефициентите $c_k$ се определят еднозначно.
+  Диференцираме \ref{recSpline} $r-$пъти в точката $x_k$ и получаваме:
+  \begin{equation*}
+    P^{(r)}_k=P_{k-1}^{(r)}(x_k)+c_kr!
+  \end{equation*}
+  и оттук
+  \begin{equation*}
+    c_k=\frac{s^{(k)}(x_k+0)-s^{(r)}(x_k-0)}{r!}.
+  \end{equation*}
+  Полиномът $p(x)$ в \ref{spline} се определя също еднозначно и съвпада с $P_0(x).$
 \subsection{Напишете и докажете рекуретната връзка за B-сплайните}
 
 \subsection{Формулирайте теоремата на Чебишов за алтернанса. Докажете достатъчността.}
