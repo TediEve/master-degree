@@ -394,7 +394,33 @@
   \end{equation*}
   Полиномът $p(x)$ в \ref{spline} се определя също еднозначно и съвпада с $P_0(x).$
 \subsection{Напишете и докажете рекуретната връзка за B-сплайните}
-
+  \begin{definition}
+    Разделената разлика на отсечената степенна функция $(x-t)_+^{r-1}$ по отношение на $x$ в точките $x_1< \ldots< x_r$ се нарича $B-$сплайн от степен $r-1$ с възли $x_0,\ldots,x_r$.
+  \end{definition}
+  \theorem
+  За всяко $r\geq2$ и $t\in(-\infty,\infty)$ е в сила равенството:
+  \begin{equation}\label{bSplineRec}
+    B_{i,r-1}(t)=\frac{t-x_i}{x_{i+r}-x_i}B_{i,r-2}(t)+\frac{x_{i+r}-t}{x_{i+r}-x_i}B_{i+1,r-2}(t).
+  \end{equation}
+  \proof
+  Ще използваме правилото на Сефансон за намиране на разделената разлика на произведение на функции:
+  \begin{equation*}
+    (f.g)[x_0,\ldots,x_n]=\sum_{k=0}^{n}f[x_0,\ldots,x_k]g[x_k,\ldots,x_n].
+  \end{equation*}
+  Избираме $f(x)=x-t$ и $g(x)=(x-t)_+^{r-2}$. Очевидно
+  \begin{equation*}
+    f(x)g(x)=(x-t)_+^{r-1}, x\in(-\infty, \infty)
+  \end{equation*}
+  и следователно
+  \begin{equation*}
+    B_{i,r-1}(t)=(f.g)[x_i,\ldots,x_{i+r}]=f(x_i)g[x_i,\ldots,x_{i+r}]+f[x_i,x_{i+1}]g[x_{i+1}, \ldots,x_{i+r}],
+  \end{equation*}
+  тъй като $f[x_i,\ldots,x_{i+k}]=0, k\geq2$. Като вземем предвид, че $f[x_i,x_{i+1}]=1$ и рекурентната връзка за разделените разлики получаваме:
+  \begin{align*}
+    B_{i,r-1}(t)&=f(x_i)\frac{g[x_{i+1},\ldots, x_{i+r}]-g[x_i,\ldots,x_{r+i-1}]}{x_{i+r}-x_i}+g[x_{i+1,\ldots,x_i+r}]\\
+    &=\left(1+\frac{f(x_i)}{x_{x+r}-x_i}\right)g[x_{i+1},\ldots,x_{i+r}]-\frac{f(x_i)}{x_{i+r}-x_i}g[x_i,\ldots,x_{i+r-1}]\\
+    &=\frac{x_{i+r}-t}{x_{i+r}-x_i}B_{i+1,r-2}(t)+\frac{t-x_i}{x_{i+r}-x_i}B_{i,r-2}(t).
+  \end{align*}
 \subsection{Формулирайте теоремата на Чебишов за алтернанса. Докажете достатъчността.}
 
 \subsection{Формулирайте теоремата на Вайерщрас. Докажете я като използвате полиномите на Бернщайн.}
