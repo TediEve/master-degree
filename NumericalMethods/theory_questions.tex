@@ -516,6 +516,29 @@
     (f-p,\phi)=0, \forall\phi\in\Omega_n.
   \end{equation}
   \proof
+  ($\Rightarrow$)\\
+  Да предположим, че $p$ е елемент на най-добро приближение, тоест
+  \begin{equation*}
+    ||f-p||=inf\{||f-\phi||:\phi\in \Omega_n\} = \epsilon_n(f).
+  \end{equation*}
+  Тогава за произволно $\phi\in\Omega_n$ и $\phi\neq0$ функцията:
+  \begin{align*}
+    r(\lambda)=||f-p+\lambda\phi||^2=(f-p+\lambda\phi,f-p+\lambda\phi)\\
+    &=\epsilon_n^2(f) + 2\lambda(f-p,\phi) +\lambda^2(\phi,\phi)
+  \end{align*}
+  ще има минимум при $\lambda=0$. Това означава, че и $r'(0)=0$. Но $r'(0)=2(f-p,\phi)$, следователно
+  $(f-p,\phi)=0, \forall\phi\in\Omega_n$
+  ($\Leftarrow$)\\
+  Да допуснем, че $p\in\Omega_n$ и $p$ удовлетворява условията за ортогоналност \ref{ndp}. Нека $\phi$ e произволен друг елемент от $\Omega_n$. Тогава $\delta=p-\phi\in\Omega_n$ и следователно
+  \begin{align*}
+    ||f-\phi||^2&=||f-p+p-\phi||^2\\&=(f-p+\delta,f-p+\delta)=||f-p||^2+||\delta||^2 \text{(защото} (f-p)\perp\delta)\\
+    &\geq||f-p||^2
+  \end{align*}
+  И така, ако $p$ удовлетворява \ref{ndp}, то
+  \begin{equation*}
+    ||f-p||\leq||f-\phi||,\hfil\forall\phi\in\Omega_n
+  \end{equation*}
+  Като равенство се достига само при $\delta=0$, тоест когато $p\equiv\phi$.
 \subsection{Изведете формулата от вида $f'(a) ~ C_0 f(a - h) + C_1 f(a + h)$ и грешката $O(h^2)$ при положение, че $f$ е достатъчно гладка.
         Обосновете порядъка на грешката.}
 

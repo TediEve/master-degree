@@ -1,18 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.16)  21 JUN 2019 17:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.4)  22 JUN 2019 17:41
 entering extended mode
-**C:/Users/teivanova/Downloads/master/master-degree/NumericalMethods/theory_que
-stions.tex
-
-(C:/Users/teivanova/Downloads/master/master-degree/NumericalMethods/theory_ques
-tions.tex
+**C:/playingAround/master-degree/NumericalMethods/theory_questions.tex
+(C:/playingAround/master-degree/NumericalMethods/theory_questions.tex
 LaTeX2e <2018-04-01> patch level 5
-
-("C:\Users\teivanova\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.c
-ls"
+("C:\Users\Yoga\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-
-("C:\Users\teivanova\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size12.cl
-o"
+("C:\Users\Yoga\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size12.clo"
 File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count80
@@ -27,30 +20,26 @@ File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Users\teivanova\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmat
-h.sty"
+("C:\Users\Yoga\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty
+"
 Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-
-("C:\Users\teivanova\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstex
-t.sty"
+("C:\Users\Yoga\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.sty
+"
 Package: amstext 2000/06/29 v2.01 AMS text
-
-("C:\Users\teivanova\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen
-.sty"
+ ("C:\Users\Yoga\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
+"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks14
 \ex@=\dimen103
 ))
-("C:\Users\teivanova\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy
-.sty"
+("C:\Users\Yoga\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen104
-)
-("C:\Users\teivanova\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn
-.sty"
+) ("C:\Users\Yoga\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.st
+y"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count88
@@ -91,8 +80,7 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
-("C:\Users\teivanova\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amscls\amsthm.
-sty"
+("C:\Users\Yoga\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amscls\amsthm.sty"
 Package: amsthm 2017/10/31 v2.20.4
 \thm@style=\toks19
 \thm@bodyfont=\toks20
@@ -104,35 +92,31 @@ Package: amsthm 2017/10/31 v2.20.4
 \thm@headsep=\skip48
 \dth@everypar=\toks24
 )
-("C:\Users\teivanova\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amssy
-mb.sty"
+("C:\Users\Yoga\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amssymb.st
+y"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-("C:\Users\teivanova\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfo
-nts.sty"
+("C:\Users\Yoga\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.s
+ty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-("C:\Users\teivanova\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.s
-ty"
+("C:\Users\Yoga\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 
-("C:\Users\teivanova\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.def
-"
+("C:\Users\Yoga\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.def"
 File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 )
-("C:\Users\teivanova\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cyrillic\t2aen
-c.def"
+("C:\Users\Yoga\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cyrillic\t2aenc.def
+"
 File: t2aenc.def 2005/09/27 v1.0i Cyrillic encoding definition file
 Now handling font encoding T2A ...
 ... processing UTF-8 mapping file for font encoding T2A
-
-("C:\Users\teivanova\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t2aenc.df
-u"
+ ("C:\Users\Yoga\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t2aenc.dfu"
 File: t2aenc.dfu 2018/04/05 v1.2c UTF-8 support for inputenc
    defining Unicode char U+00A4 (decimal 164)
    defining Unicode char U+00A7 (decimal 167)
@@ -323,46 +307,38 @@ File: t2aenc.dfu 2018/04/05 v1.2c UTF-8 support for inputenc
 ))
 LaTeX Font Info:    Try loading font information for T2A+cmr on input line 105.
 
-
-("C:\Users\teivanova\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cyrillic\t2acm
-r.fd"
+ ("C:\Users\Yoga\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cyrillic\t2acmr.fd
+"
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 ))
-("C:\Users\teivanova\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.
-sty"
+("C:\Users\Yoga\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2018/04/06 v1.3b Input encoding file
 \inpenc@prehook=\toks25
 \inpenc@posthook=\toks26
-)
-("C:\Users\teivanova\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.
-sty"
-Package: babel 2018/06/05 3.22 The Babel package
-
-("C:\Users\teivanova\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\switch
-.def"
-File: switch.def 2018/06/05 3.22 Babel switching mechanism
+) ("C:\Users\Yoga\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.sty
+"
+Package: babel 2018/10/16 3.26 The Babel package
+("C:\Users\Yoga\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\switch.def"
+File: switch.def 2018/10/16 3.26 Babel switching mechanism
 )
 *************************************
 * Local config file bblopts.cfg used
 *
-
-("C:\Users\teivanova\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblopts.
-cfg"
+("C:\Users\Yoga\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg"
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-("C:\Users\teivanova\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-bulgaria
-n\bulgarian.ldf"
+("C:\Users\Yoga\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-bulgarian\bul
+garian.ldf"
 Language: bulgarian 2013/10/14 v1.2g Bulgarian support from the babel system
 
-("C:\Users\teivanova\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.
-def"
-File: babel.def 2018/06/05 3.22 Babel common definitions
+("C:\Users\Yoga\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2018/10/16 3.26 Babel common definitions
 \babel@savecnt=\count100
 \U@D=\dimen112
 
-("C:\Users\teivanova\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\txtbab
-el.def")
+("C:\Users\Yoga\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\txtbabel.de
+f")
 \bbl@dirlevel=\count101
 )
 Package babel Info: Using `T2A' as a default Cyrillic encoding on input line 89
@@ -373,8 +349,8 @@ Package bulgarian.ldf Info: Executing the post 3.9 branch for dates on input li
 ne 302.
 Package babel Info: Making " an active character on input line 344.
 ))
-("C:\Users\teivanova\AppData\Local\Programs\MiKTeX 2.9\tex\latex\enumitem\enumi
-tem.sty"
+("C:\Users\Yoga\AppData\Local\Programs\MiKTeX 2.9\tex\latex\enumitem\enumitem.s
+ty"
 Package: enumitem 2019/02/04 v3.8 Customized lists
 \enitkv@toks@=\toks27
 \labelindent=\skip49
@@ -407,18 +383,16 @@ LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 21.
 LaTeX Font Info:    ... okay on input line 21.
  [1
 
-{C:/Users/teivanova/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (theory
-_questions.toc
+{C:/Users/Yoga/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (theory_ques
+tions.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 2.
 
-("C:\Users\teivanova\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.
-fd"
+("C:\Users\Yoga\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 2.
 
-("C:\Users\teivanova\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.
-fd"
+("C:\Users\Yoga\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Overfull \hbox (0.13481pt too wide) in paragraph at lines 2--2
@@ -500,48 +474,53 @@ cmr/m/n/12 )\OML/cmm/m/it/12 ; P[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m
  []
 
 [17]
-Overfull \hbox (24.36128pt too wide) in paragraph at lines 520--520
-[][]\T2A/cmr/bx/n/14.4 Изведете фор-му-ла-та от ви-да $\OML/cmm/m/it/14.4 f[]\O
-T1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 a\OT1/cmr/m/n/14.4 ) \OML/cmm/m/it/14.4 C[]
-f\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 a \OMS/cmsy/m/n/14.4  
+Overfull \hbox (36.46196pt too wide) detected at line 528
+[]
  []
 
-[18] [19] [20] (theory_questions.aux) ) 
+
+Overfull \hbox (2.86858pt too wide) in paragraph at lines 543--543
+[]\T2A/cmr/bx/n/14.4 Изведете фор-му-ла-та от ви-да $\OML/cmm/m/it/14.4 f[]\OT1
+/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 a\OT1/cmr/m/n/14.4 ) \OML/cmm/m/it/14.4 C[]f\
+OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 a \OMS/cmsy/m/n/14.4   \OML/cmm/m/it/14.4 
+h\OT1/cmr/m/n/14.4 ) + \OML/cmm/m/it/14.4 C[]f\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/
+14.4 a \OT1/cmr/m/n/14.4 +
+ []
+
+[18] [19] [20] [21] (theory_questions.aux) ) 
 Here is how much of TeX's memory you used:
- 2931 strings out of 492973
- 37127 string characters out of 3124920
- 111684 words of memory out of 3000000
- 6780 multiletter control sequences out of 15000+200000
+ 2941 strings out of 492970
+ 36849 string characters out of 3127038
+ 112526 words of memory out of 3000000
+ 6792 multiletter control sequences out of 15000+200000
  21265 words of font info for 58 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 27i,15n,31p,2204b,354s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\teivanova\AppData\Local\MiKTe
-X\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\lati1200.pk> <C:\Users\teivanova\AppData
-\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx1200.pk> <C:\Users\teiva
-nova\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx1440.pk> <C:
-\Users\teivanova\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx
-1728.pk> <C:\Users\teivanova\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a
-\dpi600\larm1200.pk> <C:\Users\teivanova\AppData\Local\MiKTeX\2.9\fonts\pk\ljfo
-ur\lh\lh-t2a\dpi600\larm2074.pk> <C:\Users\teivanova\AppData\Local\MiKTeX\2.9\f
-onts\pk\ljfour\lh\lh-t2a\dpi600\labx2488.pk><C:/Users/teivanova/AppData/Local/P
-rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/teivanov
-a/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
-C:/Users/teivanova/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmmi6.pfb><C:/Users/teivanova/AppData/Local/Programs/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmmi8.pfb><C:/Users/teivanova/AppData/Local/Programs/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/teivanova/AppData/Loca
-l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/teivan
-ova/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><
-C:/Users/teivanova/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmr8.pfb><C:/Users/teivanova/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmsy10.pfb><C:/Users/teivanova/AppData/Local/Programs/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/teivanova/AppData/Loca
-l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/teivan
-ova/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm1
-0.pfb>
-Output written on theory_questions.pdf (21 pages, 274788 bytes).
+ 27i,15n,31p,2185b,354s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Yoga\AppData\Local\MiKTe
+X\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\lati1200.pk> <C:\Users\Yoga\AppData\Loca
+l\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx1200.pk> <C:\Users\Yoga\AppDa
+ta\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx1440.pk> <C:\Users\Yog
+a\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\labx1728.pk> <C:\Us
+ers\Yoga\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm1200.pk>
+ <C:\Users\Yoga\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi600\larm2
+074.pk> <C:\Users\Yoga\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\lh\lh-t2a\dpi60
+0\labx2488.pk><C:/Users/Yoga/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmex10.pfb><C:/Users/Yoga/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Yoga/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Yoga/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Yoga/AppD
+ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/User
+s/Yoga/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.p
+fb><C:/Users/Yoga/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmr6.pfb><C:/Users/Yoga/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmr8.pfb><C:/Users/Yoga/AppData/Local/Programs/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Yoga/AppData/Local/Programs/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Yoga/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Yoga/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on theory_questions.pdf (22 pages, 277127 bytes).
 PDF statistics:
- 406 PDF objects out of 1000 (max. 8388607)
+ 409 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
