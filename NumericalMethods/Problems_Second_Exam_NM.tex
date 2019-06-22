@@ -485,105 +485,135 @@
     \problem
     Намерете с грешка по малка от $0.001$ положителен корен на уравнението $x^3-2x-5=0$ по метода на:
     \begin{enumerate}[a]
-        \item{nfnkm}
+        \item{свиващите изображения}
+        \item{хордите}
+        \item{Нютон}
     \end{enumerate}
-\begin{center}{\section*{Втори тип}}\end{center}
-    \setcounter{problem}{6}
-    \problem
-        Нека $B(x_0,\ldots,x_r;t)$  е  В-сплайнът от степен $r-1$ с възли $x0<\ldots<x_r.$ Да се намери $\int_{x_0}^{x_r}B(x_0,\ldots,x_r,t)dt$. Отговорът да се представи като функция зависеща само от $r$.
-    \\
     \solution
+    От правилото на Лагранж получаваме груба горна граница къде ни се намира корена на уравнението
+    \begin{equation*}
+      1+\sqrt[k]{\frac{A}{a_0}}=1+\sqrt[2]{\frac{5}{1}}<3.5
+    \end{equation*},
+    където $k$ е индекса на първия отрицателен коефициент и $А$ е най-големия по модул отрицателен коефициент.
+    Значи търсим корена в интервала $[0,3.5)$.
+    \begin{enumerate}[a]
+        \item{свиващите изображения}
+        Изображението е:
         \begin{equation*}
-        B(x_0,\ldots,x_r;t)=(x-t)^{r-1}_+[x_0,\ldots,x_r]=\sum_{k=0}^{r}c_k(x_k-t)^{r-1}_+, \text{където} c_k = \frac{1}{w'(x_k)}
-        \end{equation*}.
-        От
-        \begin{equation*}
-        f[x_0,\ldots,x_r] = \sum_{k=0}^{r}c_kf(x_k).
+            x=\frac{x^3-5}{2}=\phi(x)
         \end{equation*}
-        Разглеждаме за някое $k$ примитивната
-        \begin{equation*}
-        \int (x_k-t)^{r-1}dt = \frac{(x_k-t)^r}{-r},
-        \end{equation*}
-        където $(x_k-t)<0$ и $-r<0$ тоест $\frac{(x_k-t)^r}{-r}<0$. Тогава
+        Строим итерационния процес като $x_{k+1}=\phi_k$
+        Проверяваме дали са изпълнени условията за сходимост
         \begin{align*}
-        &\int_{x_0}^{x_r}B(x_0,\ldots,x_r;t)dt = 
-        \sum_{k=0}^{r}c_k\int_{x_0}^{x_r}(x_k-t)^{r-1}_+
-        =\left.\left(\frac{-1}{r}\sum_{k=0}^{r}x_k(x_k-t)^r_+\right)\right\rvert_{x_0}^{x_r} \\
-        &= -\frac{1}{r}(x-t)^r_+[x_0,\ldots,x_r]\rvert_{x_0}^{x_r} 
-        = -\frac{1}{r}((x-x_r)^r_+[x_0,\ldots,x_r] - (x-x_0)^r_+[x_0,\ldots,x_r]) \\
-        &= -\frac{1}{r}(0 - (x-x_0)^r_+[x_0,\ldots,x_r]) \\
-        &(x-x_0)^r_+[x_0,\ldots,x_r] - \text{коефициента пред } x^r = 1.
+          \phi:[2,3]\to[2,3]\\
         \end{align*}
-        Тогава $\boxed{\int_{x_0}^{x_r}B(x_0,\ldots,x_r;t)dt = \frac{1}{r}}$\\
-    \problem
-        Да се докаже, че най-доброто равномерно приближение с полиноми от $\pi_n$ за функцията $f(x) = cos\r x$ в $[-1,1]$ удовлетворява неравенството: $E_n(f) \leq \frac{1}{2^n(n+1)!}$.\\
-    \solution
+        Проверявам дали $\phi$ e свиващо изображение, тоест гледаме в интервала дали първата и производна е консистентно <1.
+        \item{хордите}
         \begin{equation*}
-        E_n(f) = \underset{p*\in\pi_n}{min\text{ }\rho(f;p*)}\leq \rho(f;p),\forall p\in\pi_n.
+            x_{n+1}=x_n-\frac{f(x_n)}{f(b)-f(x_n)}(b-x_n)
         \end{equation*}
-        Нека $p$ е интерполационния полином на Лагранж във възлите $\xi_0,\ldots,\xi_n$, които са нулите на $T_{n+1} = cos\left((n+1) arccos \r x\right)$.
+        \item{Нютон}
         \begin{equation*}
-        \rho(f;p)=\underset{x\in [-1,1]}{max}|f(x)-p(x)|
+         x_{n+1}=x_n-\frac{f(x_n)}{f'(x_n)}
         \end{equation*}
-        \begin{equation*}
-        |f(x)-p(x)| = \left |\frac{f^{(n+1)}(\xi)}{(n+1)!}(x-\xi_0)\ldots(x-\xi_n)\right| \leq \frac{1}{(n+1)!}.\frac{1}{2^n}|T_{n+1}(x)|\leq\frac{1}{2^n (n+1)!}
-        \end{equation*}
-        От $T_{n+1}(x)=c(x-\xi_0)\ldots(x-\xi_n)$, следва че $|T_{n+1}|\leq 1$.\\
-    \problem
-        Докажете, че ако ако $f\in C^1[0,1]$ то за производната на полинома на Бернщайн е изпълнено:
-        \begin{equation*}
-        B'_{n+1}(f;x)=\sum_{k=0}^{n}f'(\xi_k){n\choose k}x^k(1-x)^{n-k},
-        \end{equation*}
-        където $\xi_k\in\left[\frac{k}{n+1}\frac{k+1}{n+1}\right], k=0,\ldots,n$.\\
-    \solution
-        Имаме, че 
-        \begin{equation*}
-        B_{n+1}(f;t)=\sum_{k=0}^{n+1}{n+1 \choose k} f\left(\frac{k}{n+1}\right)  t^{k-1}(1-t)^{n+1-k}.
-        \end{equation*}
-        Диференцираме по $t$.
-        \begin{align*}
-        B'_{n+1}(f;t) &= \sum_{k=1}^{n+1}{n+1 \choose k} f\left(\frac{k}{n+1}\right)kt_{k-1}(1-t)^{n+1-k} \\&+ \sum_{k=0}^{n}{n+1 \choose k} f\left(\frac{k}{n+1}\right)(n+1-k)t^k(1-t)^{n-k}(-1).
-        \end{align*}
-        Първата сума започва от $k=1$, защото за $к=0$ е 0, аналогично втората сума е до $k=n$.\\
-        За първата сума полагаме $j = k-1$.
-        \begin{align*}
-        B'_{n+1}(f;t) &= \sum_{j=0}^{n}{n+1 \choose j+1} f\left(\frac{j+1}{n+1}\right)(j+1)t_{j}(1-t)^{n-j} \\&- \sum_{k=0}^{n}{n+1 \choose k} f\left(\frac{k}{n+1}\right)(n+1-k)t^k(1-t)^{n-k} \\&=\sum_{k=0}^{n}{n+1 \choose k+1} f\left(\frac{k+1}{n+1}\right)(k+1)t_{k}(1-t)^{n-k} \\&- \sum_{k=0}^{n}{n+1 \choose k} f\left(\frac{k}{n+1}\right)(n+1-k)t^k(1-t)^{n-k} \\&=\sum_{k=0}^{n}t^k(1-t)^{n-k}\left({n+1 \choose k+1} f\left(\frac{k+1}{n+1}\right)(k+1)-{n+1 \choose k} f\left(\frac{k}{n+1}\right)(n+1-k)\right)\\&=\sum_{k=0}^n={n \choose k} t^k (1-t)^{n-k} (n+1)\left(f\left(\frac{k+1}{n+1}\right)-f\left(\frac{k}{n+1}\right)\right).
-        \end{align*}
-        От теоремата на Лагранж получаваме, че за някаква средна точка $\xi_k\in\left[\frac{k}{n+1}\frac{k+1}{n+1}\right]$ е изпълнено
-        \begin{equation*}
-        B'_{n+1}(f;t)=\sum_{k=0}^n={n \choose k} t^k (1-t)^{n-k} (n+1)f'(\xi_k)\left(\frac{k+1}{n+1}-\frac{k}{n+1}\right).
-        \end{equation*}
-        Откъдето
-        \begin{equation*}
-        B'_{n+1}(f;t)=\sum_{k=0}^n={n \choose k} t^k (1-t)^{n-k}f'(\xi_k)
-        \end{equation*}
-    \problem
-        Да се докаже, че полиномите на Льожандър 
-        \begin{equation*}
-        L_n(x) = \frac{1}{2^n n!}\left((x^2-1)^n\right)^{(n)}
-        \end{equation*}
-        удовлетворяват
-        \begin{equation*}
-        \int_{-1}^{1}L_n^2(x)dx=\frac{2}{2n+1}
-        \end{equation*} 
-        (Упътване: $L_n(1)=1, L_n(-1)=(-1)^n$.)\\
-    \solution
-        \begin{align*}
-        I=\int_{-1}^{1}L_n^2(x)dx = xL_n^2(x)\rvert_{-1}^1-2\int_{-1}^{1}L_n(x)L'(x)xdx.
-        \end{align*}
-        Имаме, че
-        \begin{align*}
-        L_n(x) = \alpha_nx^n + \ldots\\
-        L'_n(x)= n\alpha_nx^{n-1} + \ldots
-        \end{align*}
+    \end{enumerate}
+% \begin{center}{\section*{Втори тип}}\end{center}
+%     \setcounter{problem}{6}
+%     \problem
+%         Нека $B(x_0,\ldots,x_r;t)$  е  В-сплайнът от степен $r-1$ с възли $x0<\ldots<x_r.$ Да се намери $\int_{x_0}^{x_r}B(x_0,\ldots,x_r,t)dt$. Отговорът да се представи като функция зависеща само от $r$.
+%     \\
+%     \solution
+%         \begin{equation*}
+%         B(x_0,\ldots,x_r;t)=(x-t)^{r-1}_+[x_0,\ldots,x_r]=\sum_{k=0}^{r}c_k(x_k-t)^{r-1}_+, \text{където} c_k = \frac{1}{w'(x_k)}
+%         \end{equation*}.
+%         От
+%         \begin{equation*}
+%         f[x_0,\ldots,x_r] = \sum_{k=0}^{r}c_kf(x_k).
+%         \end{equation*}
+%         Разглеждаме за някое $k$ примитивната
+%         \begin{equation*}
+%         \int (x_k-t)^{r-1}dt = \frac{(x_k-t)^r}{-r},
+%         \end{equation*}
+%         където $(x_k-t)<0$ и $-r<0$ тоест $\frac{(x_k-t)^r}{-r}<0$. Тогава
+%         \begin{align*}
+%         &\int_{x_0}^{x_r}B(x_0,\ldots,x_r;t)dt = 
+%         \sum_{k=0}^{r}c_k\int_{x_0}^{x_r}(x_k-t)^{r-1}_+
+%         =\left.\left(\frac{-1}{r}\sum_{k=0}^{r}x_k(x_k-t)^r_+\right)\right\rvert_{x_0}^{x_r} \\
+%         &= -\frac{1}{r}(x-t)^r_+[x_0,\ldots,x_r]\rvert_{x_0}^{x_r} 
+%         = -\frac{1}{r}((x-x_r)^r_+[x_0,\ldots,x_r] - (x-x_0)^r_+[x_0,\ldots,x_r]) \\
+%         &= -\frac{1}{r}(0 - (x-x_0)^r_+[x_0,\ldots,x_r]) \\
+%         &(x-x_0)^r_+[x_0,\ldots,x_r] - \text{коефициента пред } x^r = 1.
+%         \end{align*}
+%         Тогава $\boxed{\int_{x_0}^{x_r}B(x_0,\ldots,x_r;t)dt = \frac{1}{r}}$\\
+%     \problem
+%         Да се докаже, че най-доброто равномерно приближение с полиноми от $\pi_n$ за функцията $f(x) = cos\r x$ в $[-1,1]$ удовлетворява неравенството: $E_n(f) \leq \frac{1}{2^n(n+1)!}$.\\
+%     \solution
+%         \begin{equation*}
+%         E_n(f) = \underset{p*\in\pi_n}{min\text{ }\rho(f;p*)}\leq \rho(f;p),\forall p\in\pi_n.
+%         \end{equation*}
+%         Нека $p$ е интерполационния полином на Лагранж във възлите $\xi_0,\ldots,\xi_n$, които са нулите на $T_{n+1} = cos\left((n+1) arccos \r x\right)$.
+%         \begin{equation*}
+%         \rho(f;p)=\underset{x\in [-1,1]}{max}|f(x)-p(x)|
+%         \end{equation*}
+%         \begin{equation*}
+%         |f(x)-p(x)| = \left |\frac{f^{(n+1)}(\xi)}{(n+1)!}(x-\xi_0)\ldots(x-\xi_n)\right| \leq \frac{1}{(n+1)!}.\frac{1}{2^n}|T_{n+1}(x)|\leq\frac{1}{2^n (n+1)!}
+%         \end{equation*}
+%         От $T_{n+1}(x)=c(x-\xi_0)\ldots(x-\xi_n)$, следва че $|T_{n+1}|\leq 1$.\\
+%     \problem
+%         Докажете, че ако ако $f\in C^1[0,1]$ то за производната на полинома на Бернщайн е изпълнено:
+%         \begin{equation*}
+%         B'_{n+1}(f;x)=\sum_{k=0}^{n}f'(\xi_k){n\choose k}x^k(1-x)^{n-k},
+%         \end{equation*}
+%         където $\xi_k\in\left[\frac{k}{n+1}\frac{k+1}{n+1}\right], k=0,\ldots,n$.\\
+%     \solution
+%         Имаме, че 
+%         \begin{equation*}
+%         B_{n+1}(f;t)=\sum_{k=0}^{n+1}{n+1 \choose k} f\left(\frac{k}{n+1}\right)  t^{k-1}(1-t)^{n+1-k}.
+%         \end{equation*}
+%         Диференцираме по $t$.
+%         \begin{align*}
+%         B'_{n+1}(f;t) &= \sum_{k=1}^{n+1}{n+1 \choose k} f\left(\frac{k}{n+1}\right)kt_{k-1}(1-t)^{n+1-k} \\&+ \sum_{k=0}^{n}{n+1 \choose k} f\left(\frac{k}{n+1}\right)(n+1-k)t^k(1-t)^{n-k}(-1).
+%         \end{align*}
+%         Първата сума започва от $k=1$, защото за $к=0$ е 0, аналогично втората сума е до $k=n$.\\
+%         За първата сума полагаме $j = k-1$.
+%         \begin{align*}
+%         B'_{n+1}(f;t) &= \sum_{j=0}^{n}{n+1 \choose j+1} f\left(\frac{j+1}{n+1}\right)(j+1)t_{j}(1-t)^{n-j} \\&- \sum_{k=0}^{n}{n+1 \choose k} f\left(\frac{k}{n+1}\right)(n+1-k)t^k(1-t)^{n-k} \\&=\sum_{k=0}^{n}{n+1 \choose k+1} f\left(\frac{k+1}{n+1}\right)(k+1)t_{k}(1-t)^{n-k} \\&- \sum_{k=0}^{n}{n+1 \choose k} f\left(\frac{k}{n+1}\right)(n+1-k)t^k(1-t)^{n-k} \\&=\sum_{k=0}^{n}t^k(1-t)^{n-k}\left({n+1 \choose k+1} f\left(\frac{k+1}{n+1}\right)(k+1)-{n+1 \choose k} f\left(\frac{k}{n+1}\right)(n+1-k)\right)\\&=\sum_{k=0}^n={n \choose k} t^k (1-t)^{n-k} (n+1)\left(f\left(\frac{k+1}{n+1}\right)-f\left(\frac{k}{n+1}\right)\right).
+%         \end{align*}
+%         От теоремата на Лагранж получаваме, че за някаква средна точка $\xi_k\in\left[\frac{k}{n+1}\frac{k+1}{n+1}\right]$ е изпълнено
+%         \begin{equation*}
+%         B'_{n+1}(f;t)=\sum_{k=0}^n={n \choose k} t^k (1-t)^{n-k} (n+1)f'(\xi_k)\left(\frac{k+1}{n+1}-\frac{k}{n+1}\right).
+%         \end{equation*}
+%         Откъдето
+%         \begin{equation*}
+%         B'_{n+1}(f;t)=\sum_{k=0}^n={n \choose k} t^k (1-t)^{n-k}f'(\xi_k)
+%         \end{equation*}
+%     \problem
+%         Да се докаже, че полиномите на Льожандър 
+%         \begin{equation*}
+%         L_n(x) = \frac{1}{2^n n!}\left((x^2-1)^n\right)^{(n)}
+%         \end{equation*}
+%         удовлетворяват
+%         \begin{equation*}
+%         \int_{-1}^{1}L_n^2(x)dx=\frac{2}{2n+1}
+%         \end{equation*} 
+%         (Упътване: $L_n(1)=1, L_n(-1)=(-1)^n$.)\\
+%     \solution
+%         \begin{align*}
+%         I=\int_{-1}^{1}L_n^2(x)dx = xL_n^2(x)\rvert_{-1}^1-2\int_{-1}^{1}L_n(x)L'(x)xdx.
+%         \end{align*}
+%         Имаме, че
+%         \begin{align*}
+%         L_n(x) = \alpha_nx^n + \ldots\\
+%         L'_n(x)= n\alpha_nx^{n-1} + \ldots
+%         \end{align*}
 
-        От $xL'_n(x)= n\alpha_nx^n+\ldots = nL_n(x) + P(x)$ следва, че
-        \begin{align*}
-               I&= 2 - 2\int_{-1}^{1}L_n(x)(nL_n(x) + P)dx\\
-                &= 2 - 2\int_{-1}^{1}nL_n^2(x)dx - \underbrace{2\int_{-1}^{1}\underbrace{L_n(x)}_{\text{четна ф-я}}\underbrace{P(x)dx}_{\text{нечетна ф-я}}}_{\text{интеграл на нечетна ф-я в симитричен интервал е 0}}\\
-                &= 2 - 2nI
-        \end{align*}
-        Следователно $\boxed{I = \frac{2}{1+2n}}$.
+%         От $xL'_n(x)= n\alpha_nx^n+\ldots = nL_n(x) + P(x)$ следва, че
+%         \begin{align*}
+%                I&= 2 - 2\int_{-1}^{1}L_n(x)(nL_n(x) + P)dx\\
+%                 &= 2 - 2\int_{-1}^{1}nL_n^2(x)dx - \underbrace{2\int_{-1}^{1}\underbrace{L_n(x)}_{\text{четна ф-я}}\underbrace{P(x)dx}_{\text{нечетна ф-я}}}_{\text{интеграл на нечетна ф-я в симитричен интервал е 0}}\\
+%                 &= 2 - 2nI
+%         \end{align*}
+%         Следователно $\boxed{I = \frac{2}{1+2n}}$.
 
 
 \end{document}
