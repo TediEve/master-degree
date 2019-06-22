@@ -563,7 +563,26 @@
   \end{align*}
   От $E(a)\to0$ при $h^2\to0$, следва, че порядъка на грешката е $o(h^2)$.
 \subsection{Изведете елементарната квадратурна формула на трапеца и оценката на грешката при подходящи предположения за подинтегралната функция.}
-
+  Нека $f(x)$ е непрекъсната и дефинирана в $[a,b]$ и нека $x_0=a,x_1=b$. Тогава
+  \begin{align*}
+    L_1(f;x)&=f(a)+f[a,b](x-a)\\
+    f(x)&=L_1(f;x)+f[a,b,x](x-a)(x-b)
+  \end{align*}
+  Заменяме под интеграланата функция $f$ с $L_1$ и получаваме квадратурна формула на трапците:
+  \begin{align*}\label{trap}
+  \int_a^bf(x)dx&\approx\int_a^bL_1(f;x)dx=\int_a^bf(a)+f[a,b](x-a) \\
+    &=f(a)(b-a)+f[a,b]\frac{b^2-a^2}{2}-f[a,b]a(b-a) \\
+    &= f(a)(b-a) + \frac{f(b)-f(a)}{b-a}\left(\frac{b^2-a^2}{2} -ab +a^2\right)\\
+    &=f(a)(b-a) + \frac{f(b-f(a))}{b-a}\frac{b^2-2ab+a^2}{2}\\
+    &=f(a)(b-a)+\frac{(f(b)-f(a))(b-a)}{2}=\boxed{\frac{b-a}{2}[f(a)-f(b)].}
+  \end{align*}
+  Oт това, че $w(x) = (x-a)(x-b)$ има постоянен знак в $(a,b)$ и използвайки теоремата за средните стойностти за грешката получаваме:
+  \begin{align*}
+    R(f) &= \int_a^bf[a,b,x](x-a)(x-b)dx=\frac{f''(\xi)}{2}\int_a^b(x^2-ax-bx+ab)dx, \xi\in[a,b]\\
+    R(f) &= \frac{f''(\xi)}{2}\left(\frac{b^3-a^3}{3}-\frac{ab^2-a^3}{2}-\frac{b^3-ba^2}{2}+ab^2-a^2b\right)\\
+         &= \frac{f''(\xi)}{2}\left(\frac{2b^3-2a^3-3ab^2+3a^3-3b^3+3ba^2+6ab^2-ba^2b}{6}\right)\\
+         &= \boxed{-\frac{f''(\xi)}{12}(b-a)^3}.
+  \end{align*}
 \subsection{Формулирайте и докажете теоремата за квадратурната формула на Гаус.}
   \theorem При всяко естествено число $n$ съществува единствена квадратурна формула от вида:
     \begin{equation}\label{gausQ}
